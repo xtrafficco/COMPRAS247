@@ -30,6 +30,7 @@ const defaultProducts = [
       pedido: ["Montagem do pedido", "Revise os itens enviados da lista, ajuste a quantidade sugerida e envie para aprovacao."],
       aprovacao: ["Aprovacao do admin", "Aprove ou recuse os pedidos enviados pelo setor de compras."],
       recebimento: ["Recebimento", "Confira o que chegou, ajuste quantidades e valores, e confirme a chegada."],
+      financeiro: ["Financeiro", "Boletos simulados de todos os pedidos, os que ja chegaram e os que ainda vao chegar, com vencimento, valores e total."],
       pedidoConcluido: ["Pedido concluido", "Consulte pedidos criados automaticamente pelas listas das lojas."],
       alertas: ["Alertas operacionais", "Veja pedidos aguardando aprovacao, recebimentos e divergencias."],
       seguranca: ["Seguranca da conta", "Altere a senha e configure autenticacao em duas etapas."]
@@ -41,8 +42,8 @@ const defaultProducts = [
     ];
 
     const users = {
-      comprador: { role: "comprador", profileRole: "comprador", name: "Comprador", email: "comprador@petville", tabs: ["painel", "catalogo", "cotacoes", "historicoPreco", "lista", "pedido", "aprovacao", "recebimento", "alertas"] },
-      admin: { role: "admin", profileRole: "admin", name: "Admin", email: "admin@petville", tabs: ["painel", "catalogo", "importacao", "auditoria", "cotacoes", "historicoPreco", "lista", "fornecedores", "pedido", "aprovacao", "recebimento", "alertas", "seguranca"] },
+      comprador: { role: "comprador", profileRole: "comprador", name: "Comprador", email: "comprador@petville", tabs: ["painel", "catalogo", "cotacoes", "historicoPreco", "lista", "pedido", "aprovacao", "recebimento", "financeiro", "alertas"] },
+      admin: { role: "admin", profileRole: "admin", name: "Admin", email: "admin@petville", tabs: ["painel", "catalogo", "importacao", "auditoria", "cotacoes", "historicoPreco", "lista", "fornecedores", "pedido", "aprovacao", "recebimento", "financeiro", "alertas", "seguranca"] },
       lojaIconha: { role: "loja", profileRole: "loja", storeKey: "iconha", storeName: "LOJA ICONHA", name: "LOJA ICONHA", email: "lojaiconha@petville", tabs: ["catalogo", "lista"] },
       lojaReta: { role: "loja", profileRole: "loja", storeKey: "reta", storeName: "LOJA RETA", name: "LOJA RETA", email: "lojareta@petville", tabs: ["catalogo", "lista"] },
       comprasInternas: { role: "comprasInternas", profileRole: "compras_internas", name: "Compras internas", email: "comprasinternas@petville", tabs: ["listaIconha", "listaReta", "pedidoConcluido"] }
@@ -616,6 +617,188 @@ const defaultProducts = [
 
     function formatInputMoney(value) {
       return Number(value || 0).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function parseLocalDate(str) {
+      if (!str) return null;
+      const parts = String(str).split("-");
+      if (parts.length !== 3) return null;
+      const [y, m, d] = parts.map(Number);
+      if (!y || !m || !d) return null;
+      const dt = new Date(y, m - 1, d);
+      return isNaN(dt.getTime()) ? null : dt;
+    }
+
+    function addMonthsClamped(baseDate, monthsToAdd) {
+      const day = baseDate.getDate();
+      const target = new Date(baseDate.getFullYear(), baseDate.getMonth() + monthsToAdd, day);
+      // Se o dia "estourou" para o mes seguinte (ex.: 31 em mes sem dia 31), usa o ultimo dia do mes pretendido.
+      if (target.getDate() !== day) target.setDate(0);
+      return target;
+    }
+
+    function addDays(baseDate, days) {
+      const target = new Date(baseDate.getTime());
+      target.setDate(target.getDate() + days);
+      return target;
+    }
+
+    // Intervalo dos boletos: "month" = mesmo dia a cada mes; numero = intervalo fixo em dias (7, 14, 30...).
+    function normalizeInterval(interval) {
+      if (interval === "month") return "month";
+      const days = Number(interval);
+      return days > 0 ? days : "month";
+    }
+
+    function boletoDate(base, index, interval) {
+      const normalized = normalizeInterval(interval);
+      return normalized === "month" ? addMonthsClamped(base, index) : addDays(base, index * normalized);
+    }
+
+    function intervalSubtitle(interval, count) {
+      const normalized = normalizeInterval(interval);
+      if (normalized === "month") return `${count} boleto(s) mensais, no mesmo dia da chegada`;
+      return `${count} boleto(s) a cada ${normalized} dias apos a chegada`;
+    }
+
+    function intervalLabel(interval) {
+      const normalized = normalizeInterval(interval);
+      return normalized === "month" ? "Mensal (mesmo dia)" : `${normalized} em ${normalized} dias`;
+    }
+
+    // Simula os boletos a partir da data de chegada, conforme o intervalo escolhido.
+    // O arredondamento em centavos e distribuido nos primeiros boletos para o somatorio bater com o total.
+    function buildPaymentSchedule(total, installments, deliveryStr, interval) {
+      const n = Math.max(1, Number(installments) || 1);
+      const base = parseLocalDate(deliveryStr);
+      const totalCents = Math.round((Number(total) || 0) * 100);
+      const baseCents = Math.floor(totalCents / n);
+      const remainder = totalCents - baseCents * n;
+      const rows = [];
+      for (let i = 1; i <= n; i += 1) {
+        const cents = baseCents + (i <= remainder ? 1 : 0);
+        rows.push({ index: i, date: base ? boletoDate(base, i, interval) : null, value: cents / 100 });
+      }
+      return rows;
+    }
+
+    function currentPaymentInterval() {
+      const days = Math.floor(Number(document.getElementById("intervalSelect")?.value));
+      return days > 0 ? String(days) : "30";
+    }
+
+    function formatScheduleDate(date) {
+      return date ? date.toLocaleDateString("pt-BR") : "--/--/----";
+    }
+
+    function renderPaymentSchedule(total, installments) {
+      const scheduleEl = document.getElementById("paymentSchedule");
+      if (!scheduleEl) return;
+      const deliveryStr = document.getElementById("deliveryInput")?.value || "";
+      const interval = currentPaymentInterval();
+      const hasDate = !!parseLocalDate(deliveryStr);
+      const rows = buildPaymentSchedule(total, installments, deliveryStr, interval);
+      const subtitle = hasDate
+        ? intervalSubtitle(interval, rows.length)
+        : "Escolha a data de chegada para simular as datas";
+      const list = rows.map((row) => `
+        <div class="payment-row">
+          <span class="payment-idx">${row.index}o boleto</span>
+          <span class="payment-date${hasDate ? "" : " muted"}">${formatScheduleDate(row.date)}</span>
+          <span class="payment-val">${money(row.value)}</span>
+        </div>`).join("");
+      scheduleEl.innerHTML = `
+        <div class="payment-sim-head">
+          <strong>Simulacao de pagamentos</strong>
+          <span class="muted">${subtitle}</span>
+        </div>
+        <div class="payment-list">${list}</div>`;
+    }
+
+    // Todos os pedidos com obrigacao de pagamento: os que ja chegaram e os que ainda vao chegar.
+    // Apenas os recusados ficam de fora (nao geram boleto).
+    function financeOrders() {
+      return state.orders.filter((order) => order.status !== "rejected");
+    }
+
+    // Todos os boletos simulados dos pedidos, ja ordenados por vencimento.
+    function financeBoletos() {
+      const rows = [];
+      financeOrders().forEach((order) => {
+        const total = totalFor(order.items);
+        buildPaymentSchedule(total, order.installments || 1, order.delivery, order.interval).forEach((boleto) => {
+          rows.push({
+            date: boleto.date,
+            time: boleto.date ? boleto.date.getTime() : Number.POSITIVE_INFINITY,
+            value: boleto.value,
+            index: boleto.index,
+            installments: order.installments || 1,
+            orderId: order.id,
+            supplier: order.supplier,
+            status: order.status
+          });
+        });
+      });
+      rows.sort((a, b) => a.time - b.time);
+      return rows;
+    }
+
+    function renderFinanceiro() {
+      const boletos = financeBoletos();
+      const totalValue = boletos.reduce((sum, boleto) => sum + boleto.value, 0);
+      const orders = financeOrders();
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const next = boletos.find((boleto) => boleto.date && boleto.date.getTime() >= today.getTime());
+
+      document.getElementById("financeTotalStat").textContent = money(totalValue);
+      document.getElementById("financeCountStat").textContent = boletos.length;
+      document.getElementById("financeNextStat").textContent = next ? formatScheduleDate(next.date) : "-";
+      document.getElementById("financeOrdersStat").textContent = orders.length;
+
+      const tableBody = document.getElementById("financeTable");
+      const foot = document.getElementById("financeFoot");
+      const empty = document.getElementById("financeEmpty");
+
+      let rowsHtml = "";
+      let currentKey = null;
+      let monthSum = 0;
+
+      const flushSubtotal = () => {
+        if (currentKey !== null) {
+          rowsHtml += `<tr class="finance-subtotal"><td colspan="4">Subtotal do mes</td><td>${money(monthSum)}</td></tr>`;
+        }
+      };
+
+      boletos.forEach((boleto) => {
+        const key = boleto.date ? `${boleto.date.getFullYear()}-${boleto.date.getMonth()}` : "sem-data";
+        if (key !== currentKey) {
+          flushSubtotal();
+          monthSum = 0;
+          currentKey = key;
+          const label = boleto.date
+            ? `${salesMonths[boleto.date.getMonth()]} de ${boleto.date.getFullYear()}`
+            : "Sem data de chegada definida";
+          rowsHtml += `<tr class="finance-month"><td colspan="5">${label}</td></tr>`;
+        }
+        monthSum += boleto.value;
+        rowsHtml += `
+          <tr>
+            <td><strong>${formatScheduleDate(boleto.date)}</strong></td>
+            <td>Pedido #${boleto.orderId}</td>
+            <td>${escapeHtml(boleto.supplier || "-")}</td>
+            <td>${boleto.index}/${boleto.installments} <span class="status ${boleto.status}">${statusText(boleto.status)}</span></td>
+            <td><strong>${money(boleto.value)}</strong></td>
+          </tr>`;
+      });
+      flushSubtotal();
+
+      tableBody.innerHTML = rowsHtml;
+      foot.innerHTML = boletos.length
+        ? `<tr class="finance-total"><td colspan="4">Total a pagar</td><td>${money(totalValue)}</td></tr>`
+        : "";
+      tableBody.closest(".table-wrap").style.display = boletos.length ? "block" : "none";
+      empty.style.display = boletos.length ? "none" : "block";
     }
 
     function productById(id) {
@@ -1883,6 +2066,7 @@ const defaultProducts = [
       document.getElementById("orderItemsStat").textContent = selected.length;
       document.getElementById("orderTotalStat").textContent = money(total);
       document.getElementById("installmentValueStat").textContent = money(total / installments);
+      renderPaymentSchedule(total, installments);
     }
 
     function toggleOrderItem(productId, checked) {
@@ -1935,6 +2119,7 @@ const defaultProducts = [
       const priority = document.getElementById("prioritySelect").value;
       const delivery = document.getElementById("deliveryInput").value;
       const installments = currentInstallments();
+      const interval = currentPaymentInterval();
       const notes = document.getElementById("notesInput").value.trim();
       const items = selectedOrderItems();
 
@@ -1964,6 +2149,7 @@ const defaultProducts = [
         priority,
         delivery,
         installments,
+        interval,
         installmentValue: orderTotal / installments,
         notes,
         status: autoApproved ? "approved" : "pending",
@@ -1997,6 +2183,7 @@ const defaultProducts = [
 
       document.getElementById("supplierSelect").value = "";
       document.getElementById("installmentsInput").value = "1";
+      document.getElementById("intervalSelect").value = "30";
       document.getElementById("notesInput").value = "";
 
       recordAudit("order", autoApproved ? "Pedido aprovado automaticamente" : "Pedido enviado para aprovacao", order.id, `${order.supplier} | ${order.items.length} item(ns) | ${money(orderTotal)}`);
@@ -2287,6 +2474,7 @@ const defaultProducts = [
           <div class="detail-box"><span>Entrega desejada</span><strong>${escapeHtml(order.delivery || "-")}</strong></div>
           <div class="detail-box"><span>Itens</span><strong>${order.items.length}</strong></div>
           <div class="detail-box"><span>Boletos</span><strong>${order.installments || 1}x</strong></div>
+          <div class="detail-box"><span>Intervalo</span><strong>${escapeHtml(intervalLabel(order.interval))}</strong></div>
           <div class="detail-box"><span>Valor por boleto</span><strong>${money(order.installmentValue || total)}</strong></div>
           <div class="detail-box"><span>Total</span><strong>${money(total)}</strong></div>
           <div class="detail-box"><span>Recebimento</span><strong>${receiptEntries(order).length ? `${receiptEntries(order).length} entrega(s) | ${money(receivingTotal(order))}` : "Pendente"}</strong></div>
@@ -2310,6 +2498,28 @@ const defaultProducts = [
               </table>
             </div>
           </div>
+          ${(() => {
+            const sched = buildPaymentSchedule(total, order.installments || 1, order.delivery, order.interval);
+            const scheduleRows = sched.map((row) => `
+                  <tr>
+                    <td><strong>${row.index}o boleto</strong></td>
+                    <td>${formatScheduleDate(row.date)}</td>
+                    <td><strong>${money(row.value)}</strong></td>
+                  </tr>`).join("");
+            return `
+          <div class="panel" style="box-shadow: none; margin-top: 12px;">
+            <div class="panel-header"><h2>Simulacao de pagamentos</h2></div>
+            <div class="panel-body">
+              <p class="help-text" style="margin-bottom: 10px;">${order.delivery ? `${intervalSubtitle(order.interval, sched.length)}, a partir da chegada (${escapeHtml(order.delivery)}).` : "Sem data de chegada definida; datas nao calculadas."}</p>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Parcela</th><th>Vencimento</th><th>Valor</th></tr></thead>
+                  <tbody>${scheduleRows}</tbody>
+                </table>
+              </div>
+            </div>
+          </div>`;
+          })()}
           ${order.notes ? `<div class="detail-box" style="margin-top: 12px;"><span>Observacoes</span><strong>${escapeHtml(order.notes)}</strong></div>` : ""}
           ${order.decisionReason ? `<div class="detail-box" style="margin-top: 12px;"><span>Justificativa da decisao</span><strong>${escapeHtml(order.decisionReason)}</strong></div>` : ""}
           ${receiptEntries(order).length ? `<div class="detail-box" style="margin-top: 12px;"><span>Historico de recebimentos</span>${receiptEntries(order).map((entry, index) => `<strong>Entrega ${index + 1}: ${escapeHtml(dateTimeText(entry.confirmedAt))} | ${money(entry.total)}</strong>`).join("<br>")}</div>` : ""}
@@ -2699,6 +2909,8 @@ const defaultProducts = [
       document.getElementById("countPedido").textContent = state.orderDraft.length;
       document.getElementById("countAprovacao").textContent = state.orders.filter((order) => order.status === "pending").length;
       document.getElementById("countRecebimento").textContent = state.orders.filter((order) => order.status === "approved").length;
+      const countFinanceiroEl = document.getElementById("countFinanceiro");
+      if (countFinanceiroEl) countFinanceiroEl.textContent = financeBoletos().length;
       document.getElementById("countPedidoConcluido").textContent = state.orders.filter((order) => order.status === "completed").length;
       document.getElementById("countAlertas").textContent = operationalAlerts().length;
       document.getElementById("countSeguranca").textContent = 0;
@@ -2781,6 +2993,8 @@ const defaultProducts = [
       else clearRenderedContent(["approvalList"]);
       if (canAccessTab("recebimento")) renderReceiving();
       else clearRenderedContent(["receivingList"]);
+      if (canAccessTab("financeiro")) renderFinanceiro();
+      else clearRenderedContent(["financeTable", "financeFoot"]);
       if (canAccessTab("pedidoConcluido")) renderCompletedOrders();
       else clearRenderedContent(["completedOrderList"]);
       if (canAccessTab("cotacoes")) renderQuotations();
@@ -2827,6 +3041,10 @@ const defaultProducts = [
     document.getElementById("sendApprovalButton").addEventListener("click", sendApproval);
     document.getElementById("applyQuotesButton").addEventListener("click", applySupplierQuotations);
     document.getElementById("installmentsInput").addEventListener("input", renderOrder);
+    document.getElementById("deliveryInput").addEventListener("input", renderOrder);
+    document.getElementById("deliveryInput").addEventListener("change", renderOrder);
+    document.getElementById("intervalSelect").addEventListener("input", renderOrder);
+    document.getElementById("intervalSelect").addEventListener("change", renderOrder);
     document.getElementById("saveSupplierButton").addEventListener("click", saveSupplier);
     document.getElementById("clearSupplierButton").addEventListener("click", clearSupplierForm);
     document.getElementById("saveQuoteButton").addEventListener("click", saveQuotation);

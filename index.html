@@ -119,6 +119,11 @@
           <span>Recebimento</span>
           <span class="tab-count" id="countRecebimento">0</span>
         </button>
+        <button class="tab-button" data-tab="financeiro">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01"/><path d="M18 12h.01"/></svg></span>
+          <span>Financeiro</span>
+          <span class="tab-count" id="countFinanceiro">0</span>
+        </button>
         <button class="tab-button" data-tab="pedidoConcluido">
           <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M3.29 7 12 12l8.71-5"/><path d="M12 22V12"/></svg></span>
           <span>Pedido Concluido</span>
@@ -635,13 +640,20 @@
                   <label for="installmentsInput">Quantidade de boletos</label>
                   <input class="input" id="installmentsInput" type="number" min="1" value="1">
                 </div>
+                <div class="field">
+                  <label for="intervalSelect">Intervalo dos boletos (dias)</label>
+                  <div class="input-suffix">
+                    <input class="input" id="intervalSelect" type="number" min="1" step="1" value="30" placeholder="Ex.: 7, 14, 30">
+                    <span>dias</span>
+                  </div>
+                </div>
                 <div class="field full">
                   <label for="notesInput">Observacoes</label>
                   <textarea class="textarea" id="notesInput" placeholder="Ex.: comprar para reposicao do escritorio."></textarea>
                 </div>
               </div>
 
-              <div class="summary-grid" style="grid-template-columns: repeat(3, 1fr); margin: 16px 0;">
+              <div class="summary-grid" style="margin-top: 16px;">
                 <div class="stat">
                   <span>Itens selecionados</span>
                   <strong id="orderItemsStat">0</strong>
@@ -655,6 +667,8 @@
                   <strong id="installmentValueStat">R$ 0,00</strong>
                 </div>
               </div>
+
+              <div class="payment-sim" id="paymentSchedule"></div>
 
               <button class="button" id="sendApprovalButton" type="button">Enviar para aprovacao</button>
             </div>
@@ -699,6 +713,36 @@
           </div>
           <div id="receivingList"></div>
           <div class="empty" id="receivingEmpty">Nenhum pedido aprovado aguardando recebimento.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="financeiro" aria-labelledby="pageTitle">
+        <div class="summary-grid dashboard-summary">
+          <div class="stat"><span>Total em boletos</span><strong id="financeTotalStat">R$ 0,00</strong></div>
+          <div class="stat"><span>Total de boletos</span><strong id="financeCountStat">0</strong></div>
+          <div class="stat"><span>Proximo vencimento</span><strong id="financeNextStat">-</strong></div>
+          <div class="stat"><span>Pedidos com boletos</span><strong id="financeOrdersStat">0</strong></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Boletos de todos os pedidos</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Vencimento</th>
+                  <th>Pedido</th>
+                  <th>Fornecedor</th>
+                  <th>Parcela</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody id="financeTable"></tbody>
+              <tfoot id="financeFoot"></tfoot>
+            </table>
+          </div>
+          <div class="empty" id="financeEmpty">Nenhum boleto registrado no momento.</div>
         </div>
       </section>
 
