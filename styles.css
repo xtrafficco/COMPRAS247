@@ -581,7 +581,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .import-box {
@@ -777,6 +777,7 @@ td {
   border-bottom: 1px solid var(--line-soft);
   text-align: left;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 tbody tr {
@@ -810,7 +811,7 @@ td strong {
 
 .row-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
   justify-content: flex-end;
   align-items: center;
@@ -1030,7 +1031,7 @@ tfoot .finance-total td:last-child {
 
 .payment-sim {
   margin: 0 0 18px;
-  padding: 16px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--panel-2);
