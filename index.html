@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Compras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="login-screen" id="loginScreen">
+    <form class="login-card" id="loginForm">
+      <div>
+        <h1>Sistema de Compras</h1>
+        <p>Entre com seu perfil para acessar as abas permitidas.</p>
+      </div>
+      <div class="field">
+        <label for="loginRole">Perfil</label>
+        <select class="select" id="loginRole">
+          <option value="comprador">Comprador</option>
+          <option value="admin">Admin</option>
+          <option value="lojaIconha">LOJA ICONHA</option>
+          <option value="lojaReta">LOJA RETA</option>
+          <option value="comprasInternas">Compras internas</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="loginEmail">E-mail</label>
+        <input class="input" id="loginEmail" type="email" autocomplete="username" placeholder="email do usuario">
+      </div>
+      <div class="field">
+        <label for="loginPassword">Senha</label>
+        <input class="input" id="loginPassword" type="password" autocomplete="current-password" placeholder="Digite a senha">
+      </div>
+      <label class="remember-login" for="rememberLogin">
+        <input id="rememberLogin" type="checkbox">
+        <span>Lembrar perfil e e-mail neste computador</span>
+      </label>
+      <button class="button" type="submit">Entrar</button>
+      <button class="button secondary" id="forgotPasswordButton" type="button">Recuperar senha</button>
+    </form>
+  </section>
+
+  <div class="app-shell locked" id="appShell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SC</div>
+        <div>
+          <strong>Compras</strong>
+          <span>Fluxo sem estoque</span>
+        </div>
+      </div>
+
+      <nav class="tabs" aria-label="Abas do sistema">
+        <button class="tab-button" data-tab="painel">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+          <span>Painel</span>
+          <span class="tab-count" id="countPainel">0</span>
+        </button>
+        <button class="tab-button active" data-tab="catalogo">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>
+          <span>Catalogo</span>
+          <span class="tab-count" id="countCatalogo">8</span>
+        </button>
+        <button class="tab-button" data-tab="importacao">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
+          <span>Importacao</span>
+          <span class="tab-count" id="countImportacao">0</span>
+        </button>
+        <button class="tab-button" data-tab="auditoria">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg></span>
+          <span>Auditoria</span>
+          <span class="tab-count" id="countAuditoria">0</span>
+        </button>
+        <button class="tab-button" data-tab="lista">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
+          <span>Lista</span>
+          <span class="tab-count" id="countLista">0</span>
+        </button>
+        <button class="tab-button" data-tab="listaIconha">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><rect x="9" y="13" width="6" height="7"/></svg></span>
+          <span>Lista Iconha</span>
+          <span class="tab-count" id="countListaIconha">0</span>
+        </button>
+        <button class="tab-button" data-tab="listaReta">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><rect x="9" y="13" width="6" height="7"/></svg></span>
+          <span>Lista Reta</span>
+          <span class="tab-count" id="countListaReta">0</span>
+        </button>
+        <button class="tab-button" data-tab="fornecedores">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h1"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+          <span>Fornecedores</span>
+          <span class="tab-count" id="countFornecedores">0</span>
+        </button>
+        <button class="tab-button" data-tab="cotacoes">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.4 2.4 0 0 0 3.42 0l6.58-6.58a2.4 2.4 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+          <span>Cotacoes</span>
+          <span class="tab-count" id="countCotacoes">0</span>
+        </button>
+        <button class="tab-button" data-tab="historicoPreco">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+          <span>Historico</span>
+          <span class="tab-count" id="countHistoricoPreco">0</span>
+        </button>
+        <button class="tab-button" data-tab="pedido">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg></span>
+          <span>Pedido</span>
+          <span class="tab-count" id="countPedido">0</span>
+        </button>
+        <button class="tab-button" data-tab="aprovacao">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.8 10A10 10 0 1 1 17 3.34"/><path d="m9 11 3 3L22 4"/></svg></span>
+          <span>Aprovacao</span>
+          <span class="tab-count" id="countAprovacao">0</span>
+        </button>
+        <button class="tab-button" data-tab="recebimento">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></span>
+          <span>Recebimento</span>
+          <span class="tab-count" id="countRecebimento">0</span>
+        </button>
+        <button class="tab-button" data-tab="pedidoConcluido">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M3.29 7 12 12l8.71-5"/><path d="M12 22V12"/></svg></span>
+          <span>Pedido Concluido</span>
+          <span class="tab-count" id="countPedidoConcluido">0</span>
+        </button>
+        <button class="tab-button" data-tab="alertas">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+          <span>Alertas</span>
+          <span class="tab-count" id="countAlertas">0</span>
+        </button>
+        <button class="tab-button" data-tab="seguranca">
+          <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></span>
+          <span>Seguranca</span>
+          <span class="tab-count" id="countSeguranca">0</span>
+        </button>
+      </nav>
+      <div class="sidebar-footer">Criado por Ramon Farias</div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <h1 id="pageTitle">Catalogo de produtos</h1>
+          <p id="pageDescription">Consulte a lista do catalogo e adicione o que precisa ser comprado.</p>
+        </div>
+        <div class="toolbar">
+          <input class="input" id="searchInput" type="search" placeholder="Buscar produto...">
+          <div class="user-pill" id="userPill">Usuario</div>
+          <button class="button secondary" id="logoutButton" type="button">Sair</button>
+          <button class="button secondary" id="resetButton" type="button">Limpar dados</button>
+        </div>
+      </div>
+
+      <section class="tab-panel active" id="catalogo" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Catalogo em lista</h2>
+            <select class="select" id="catalogStatusFilter" aria-label="Situacao dos produtos">
+              <option value="active">Produtos ativos</option>
+              <option value="archived">Produtos arquivados</option>
+              <option value="all">Todos os produtos</option>
+            </select>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="catalogTableHead">
+              </thead>
+              <tbody id="catalogTable"></tbody>
+            </table>
+          </div>
+          <div class="pagination" id="catalogPagination">
+            <span class="muted" id="catalogPageInfo">0 produtos</span>
+            <div class="pagination-actions">
+              <button class="button secondary" id="catalogPrevButton" type="button">Anterior</button>
+              <button class="button secondary" id="catalogNextButton" type="button">Proxima</button>
+            </div>
+          </div>
+          <div class="empty" id="catalogEmpty">Nenhum produto encontrado.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="painel" aria-labelledby="pageTitle">
+        <div class="summary-grid dashboard-summary">
+          <div class="stat"><span>Compras no mes</span><strong id="dashboardPurchaseTotal">R$ 0,00</strong></div>
+          <div class="stat"><span>Pedidos pendentes</span><strong id="dashboardPendingOrders">0</strong></div>
+          <div class="stat"><span>Recebido no mes</span><strong id="dashboardReceivedTotal">R$ 0,00</strong></div>
+          <div class="stat"><span>Divergencias abertas</span><strong id="dashboardDivergences">0</strong></div>
+        </div>
+        <div class="order-layout">
+          <div class="panel">
+            <div class="panel-header"><h2>Compras por fornecedor</h2></div>
+            <div class="panel-body" id="dashboardSupplierBars"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-header"><h2>Produtos mais comprados</h2></div>
+            <div class="table-wrap"><table><thead><tr><th>Produto</th><th>Quantidade</th><th>Total</th></tr></thead><tbody id="dashboardTopProducts"></tbody></table></div>
+          </div>
+        </div>
+        <div class="panel admin-only-panel" id="approvalRulesPanel" style="margin-top: 16px;">
+          <div class="panel-header"><h2>Regras de aprovacao</h2></div>
+          <div class="panel-body form-grid">
+            <div class="field">
+              <label for="autoApprovalLimitInput">Aprovar automaticamente ate</label>
+              <input class="input" id="autoApprovalLimitInput" type="text" placeholder="0,00">
+            </div>
+            <div class="field">
+              <label for="approvalLimitInfo">Comportamento</label>
+              <div class="info-line" id="approvalLimitInfo">Valor zero exige aprovacao em todos os pedidos.</div>
+            </div>
+            <div class="inline-actions full"><button class="button" id="saveApprovalRulesButton" type="button">Salvar regra</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="importacao" aria-labelledby="pageTitle">
+        <div class="summary-grid">
+          <div class="stat">
+            <span>Ano das vendas</span>
+            <input class="input" id="salesYearInput" type="number" min="2000" max="2100" step="1">
+          </div>
+          <div class="stat">
+            <span>Meses de vendas preenchidos</span>
+            <strong id="salesCoverageTitle">0 produtos com vendas</strong>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="month-status-grid" id="salesCoverageGrid"></div>
+        </div>
+        <div class="import-panel">
+          <div class="import-box">
+            <h2>Importar itens para o catalogo</h2>
+            <p class="help-text">Cole os dados em colunas separadas. Cada linha da coluna Codigo combina com a mesma linha das outras colunas.</p>
+            <div class="field">
+              <label for="catalogFileInput">Arquivo Excel ou CSV</label>
+              <input class="input" id="catalogFileInput" type="file" accept=".xlsx,.csv,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="catalogCodesInput">Codigo</label>
+                <textarea class="textarea" id="catalogCodesInput" placeholder="P001&#10;P002"></textarea>
+              </div>
+              <div class="field">
+                <label for="catalogNamesInput">Produto</label>
+                <textarea class="textarea" id="catalogNamesInput" placeholder="Cafe 500g&#10;Copo descartavel"></textarea>
+              </div>
+              <div class="field">
+                <label for="catalogPricesInput">Preco de custo</label>
+                <textarea class="textarea" id="catalogPricesInput" placeholder="18,90&#10;7,50"></textarea>
+              </div>
+              <div class="field">
+                <label for="catalogSalePricesInput">Preco de venda</label>
+                <textarea class="textarea" id="catalogSalePricesInput" placeholder="29,90&#10;12,50"></textarea>
+              </div>
+            </div>
+            <div class="inline-actions">
+              <button class="button" id="importCatalogButton" type="button">Revisar importacao</button>
+              <button class="button secondary" id="clearCatalogImportButton" type="button">Limpar campo</button>
+            </div>
+          </div>
+          <div class="import-box">
+            <h2>Importar vendas mensais</h2>
+            <p class="help-text">Cole o produto e as vendas de cada mes em colunas. A media aparece somente no Pedido como sugestao de compra.</p>
+            <div class="field">
+              <label for="salesFileInput">Arquivo Excel ou CSV</label>
+              <input class="input" id="salesFileInput" type="file" accept=".xlsx,.csv,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="salesCodesInput">Codigo</label>
+                <textarea class="textarea" id="salesCodesInput" placeholder="P001&#10;P002"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesNamesInput">Produto</label>
+                <textarea class="textarea" id="salesNamesInput" placeholder="Papel sulfite A4&#10;Caneta azul caixa"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth1Input">Janeiro</label>
+                <textarea class="textarea" id="salesMonth1Input" placeholder="120&#10;24"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth2Input">Fevereiro</label>
+                <textarea class="textarea" id="salesMonth2Input" placeholder="135&#10;30"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth3Input">Marco</label>
+                <textarea class="textarea" id="salesMonth3Input" placeholder="128&#10;28"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth4Input">Abril</label>
+                <textarea class="textarea" id="salesMonth4Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth5Input">Maio</label>
+                <textarea class="textarea" id="salesMonth5Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth6Input">Junho</label>
+                <textarea class="textarea" id="salesMonth6Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth7Input">Julho</label>
+                <textarea class="textarea" id="salesMonth7Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth8Input">Agosto</label>
+                <textarea class="textarea" id="salesMonth8Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth9Input">Setembro</label>
+                <textarea class="textarea" id="salesMonth9Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth10Input">Outubro</label>
+                <textarea class="textarea" id="salesMonth10Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth11Input">Novembro</label>
+                <textarea class="textarea" id="salesMonth11Input" placeholder="0&#10;0"></textarea>
+              </div>
+              <div class="field">
+                <label for="salesMonth12Input">Dezembro</label>
+                <textarea class="textarea" id="salesMonth12Input" placeholder="0&#10;0"></textarea>
+              </div>
+            </div>
+            <div class="inline-actions">
+              <button class="button" id="importSalesButton" type="button">Revisar importacao</button>
+              <button class="button secondary" id="clearSalesImportButton" type="button">Limpar campo</button>
+            </div>
+          </div>
+        </div>
+        <div class="panel" id="importPreviewPanel" style="display: none;">
+          <div class="panel-header">
+            <div><h2 id="importPreviewTitle">Pre-visualizacao</h2><span class="muted" id="importPreviewSummary"></span></div>
+            <button class="button secondary" id="closeImportPreviewButton" type="button">Fechar</button>
+          </div>
+          <div class="table-wrap"><table><thead><tr><th>Linha</th><th>Codigo</th><th>Produto</th><th>Resultado</th><th>Detalhes</th></tr></thead><tbody id="importPreviewTable"></tbody></table></div>
+          <div class="panel-body inline-actions">
+            <button class="button" id="confirmImportButton" type="button">Confirmar importacao</button>
+            <button class="button secondary" id="downloadImportErrorsButton" type="button">Baixar erros CSV</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="auditoria" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Historico de alteracoes</h2>
+            <select class="select" id="auditActionFilter" aria-label="Filtrar auditoria">
+              <option value="all">Todas as acoes</option>
+              <option value="catalog">Catalogo</option>
+              <option value="sales">Vendas</option>
+              <option value="supplier">Fornecedores</option>
+              <option value="order">Pedidos</option>
+              <option value="receipt">Recebimentos</option>
+              <option value="system">Sistema</option>
+            </select>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data e hora</th>
+                  <th>Usuario</th>
+                  <th>Area</th>
+                  <th>Acao</th>
+                  <th>Detalhes</th>
+                </tr>
+              </thead>
+              <tbody id="auditTable"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="auditEmpty">Nenhuma alteracao registrada.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="lista" aria-labelledby="pageTitle">
+        <div class="summary-grid">
+          <div class="stat">
+            <span>Itens na lista</span>
+            <strong id="listItemsStat">0</strong>
+          </div>
+          <div class="stat" id="listSelectedCard">
+            <span>Selecionados para pedido</span>
+            <strong id="listSelectedStat">0</strong>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Itens escolhidos no catalogo</h2>
+            <button class="button" id="goOrderButton" type="button">Montar pedido</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="listTableHead">
+                <tr>
+                  <th>Selecionar</th>
+                  <th>Codigo</th>
+                  <th>Produto</th>
+                  <th>Tendencia</th>
+                  <th>Media movel</th>
+                  <th>ABC</th>
+                  <th>Acoes</th>
+                </tr>
+              </thead>
+              <tbody id="listTable"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="listEmpty">Nenhum produto escolhido ainda.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="fornecedores" aria-labelledby="pageTitle">
+        <div class="order-layout stacked">
+          <div class="panel">
+            <div class="panel-header">
+              <h2>Cadastrar fornecedor</h2>
+            </div>
+            <div class="panel-body">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="supplierNameInput">Nome</label>
+                  <input class="input" id="supplierNameInput" placeholder="Fornecedor Ltda">
+                </div>
+                <div class="field">
+                  <label for="supplierContactInput">Contato</label>
+                  <input class="input" id="supplierContactInput" placeholder="compras@fornecedor.com">
+                </div>
+                <div class="field">
+                  <label for="supplierPhoneInput">Telefone</label>
+                  <input class="input" id="supplierPhoneInput" placeholder="(00) 00000-0000">
+                </div>
+                <div class="field">
+                  <label for="supplierTermsInput">Condicao padrao</label>
+                  <input class="input" id="supplierTermsInput" placeholder="Ex.: 3 boletos">
+                </div>
+                <div class="field full">
+                  <label for="supplierNotesInput">Observacoes</label>
+                  <textarea class="textarea" id="supplierNotesInput" placeholder="Dados bancarios, prazo, politica comercial..."></textarea>
+                </div>
+              </div>
+              <div class="inline-actions" style="margin-top: 14px;">
+                <button class="button" id="saveSupplierButton" type="button">Salvar fornecedor</button>
+                <button class="button secondary" id="clearSupplierButton" type="button">Limpar formulario</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h2>Fornecedores cadastrados</h2>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fornecedor</th>
+                    <th>Contato</th>
+                    <th>Telefone</th>
+                    <th>Condicao</th>
+                    <th>Acoes</th>
+                  </tr>
+                </thead>
+                <tbody id="supplierTable"></tbody>
+              </table>
+            </div>
+            <div class="empty" id="supplierEmpty">Nenhum fornecedor cadastrado.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="cotacoes" aria-labelledby="pageTitle">
+        <div class="order-layout stacked">
+          <div class="panel">
+            <div class="panel-header"><h2>Registrar cotacao</h2></div>
+            <div class="panel-body form-grid">
+              <div class="field"><label for="quoteProductSelect">Produto</label><select class="select" id="quoteProductSelect"><option value="">Selecione</option></select></div>
+              <div class="field"><label for="quoteSupplierSelect">Fornecedor</label><select class="select" id="quoteSupplierSelect"><option value="">Selecione</option></select></div>
+              <div class="field"><label for="quotePriceInput">Preco cotado</label><input class="input" id="quotePriceInput" type="text" placeholder="0,00"></div>
+              <div class="field"><label for="quoteDeliveryDaysInput">Prazo em dias</label><input class="input" id="quoteDeliveryDaysInput" type="number" min="0" value="0"></div>
+              <div class="field full"><label for="quoteNotesInput">Observacoes</label><textarea class="textarea" id="quoteNotesInput"></textarea></div>
+              <div class="inline-actions full"><button class="button" id="saveQuoteButton" type="button">Salvar cotacao</button></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-header"><h2>Comparativo</h2></div>
+            <div class="table-wrap"><table><thead><tr><th>Produto</th><th>Fornecedor</th><th>Preco</th><th>Prazo</th><th>Status</th><th>Acoes</th></tr></thead><tbody id="quotesTable"></tbody></table></div>
+            <div class="empty" id="quotesEmpty">Nenhuma cotacao registrada.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="historicoPreco" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header price-history-toolbar">
+            <div class="field price-history-product-field">
+              <label for="priceHistoryProductSelect">Produto</label>
+              <select class="select" id="priceHistoryProductSelect"></select>
+            </div>
+            <button class="button secondary" id="exportPriceHistoryButton" type="button">Exportar CSV</button>
+          </div>
+        </div>
+
+        <div class="summary-grid price-history-summary">
+          <div class="stat"><span>Custo atual</span><strong id="priceHistoryCurrentCost">-</strong></div>
+          <div class="stat"><span>Venda atual</span><strong id="priceHistoryCurrentSale">-</strong></div>
+          <div class="stat"><span>Ultima variacao de custo</span><strong id="priceHistoryVariation">-</strong></div>
+          <div class="stat"><span>Faixa historica de custo</span><strong id="priceHistoryRange">-</strong></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2>Evolucao dos ultimos registros</h2>
+              <div class="price-legend"><span><i class="legend-cost"></i>Custo</span><span><i class="legend-sale"></i>Venda</span></div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="price-history-chart" id="priceHistoryChart"></div>
+            <div class="empty" id="priceHistoryChartEmpty">Ainda nao existem dados para montar o grafico.</div>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top: 16px;">
+          <div class="panel-header"><h2>Registros de preco</h2></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Data e hora</th><th>Preco de custo</th><th>Preco de venda</th><th>Variacao</th><th>Origem</th><th>Responsavel</th></tr></thead>
+              <tbody id="priceHistoryTable"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="priceHistoryEmpty">Nenhum historico registrado para este produto.</div>
+        </div>
+
+        <div class="panel admin-only-panel" id="priceAlertRulePanel" style="margin-top: 16px;">
+          <div class="panel-header"><h2>Alerta de aumento</h2></div>
+          <div class="panel-body form-grid">
+            <div class="field">
+              <label for="priceIncreaseAlertInput">Alertar quando o custo subir a partir de</label>
+              <div class="input-suffix"><input class="input" id="priceIncreaseAlertInput" type="number" min="0" step="0.1" value="10"><span>%</span></div>
+            </div>
+            <div class="field">
+              <label>Aplicacao</label>
+              <div class="info-line">Compara os dois ultimos precos efetivos de cada produto.</div>
+            </div>
+            <div class="inline-actions full"><button class="button" id="savePriceAlertRuleButton" type="button">Salvar regra</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="listaIconha" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Lista da Loja Iconha</h2>
+            <button class="button" type="button" onclick="createCompletedOrderFromStore('iconha')">Transformar em pedido</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Produto</th>
+                  <th>Quantidade</th>
+                  <th>Tendencia</th>
+                  <th>Media movel</th>
+                  <th>ABC</th>
+                </tr>
+              </thead>
+              <tbody id="storeListIconhaTable"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="storeListIconhaEmpty">Nenhum item na lista da Loja Iconha.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="listaReta" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Lista da Loja Reta</h2>
+            <button class="button" type="button" onclick="createCompletedOrderFromStore('reta')">Transformar em pedido</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Produto</th>
+                  <th>Quantidade</th>
+                  <th>Tendencia</th>
+                  <th>Media movel</th>
+                  <th>ABC</th>
+                </tr>
+              </thead>
+              <tbody id="storeListRetaTable"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="storeListRetaEmpty">Nenhum item na lista da Loja Reta.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="pedido" aria-labelledby="pageTitle">
+        <div class="order-layout stacked">
+          <div class="panel">
+            <div class="panel-header">
+              <h2>Dados do pedido</h2>
+            </div>
+            <div class="panel-body">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="supplierSelect">Fornecedor</label>
+                  <select class="select" id="supplierSelect">
+                    <option value="">Selecione</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <button class="button secondary" id="applyQuotesButton" type="button">Aplicar melhores cotacoes deste fornecedor</button>
+                </div>
+                <div class="field">
+                  <label for="buyerInput">Solicitante</label>
+                  <input class="input" id="buyerInput" value="Compras Internas">
+                </div>
+                <div class="field">
+                  <label for="prioritySelect">Prioridade</label>
+                  <select class="select" id="prioritySelect">
+                    <option>Normal</option>
+                    <option>Alta</option>
+                    <option>Urgente</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="deliveryInput">Entrega desejada</label>
+                  <input class="input" id="deliveryInput" type="date">
+                </div>
+                <div class="field">
+                  <label for="installmentsInput">Quantidade de boletos</label>
+                  <input class="input" id="installmentsInput" type="number" min="1" value="1">
+                </div>
+                <div class="field full">
+                  <label for="notesInput">Observacoes</label>
+                  <textarea class="textarea" id="notesInput" placeholder="Ex.: comprar para reposicao do escritorio."></textarea>
+                </div>
+              </div>
+
+              <div class="summary-grid" style="grid-template-columns: repeat(3, 1fr); margin: 16px 0;">
+                <div class="stat">
+                  <span>Itens selecionados</span>
+                  <strong id="orderItemsStat">0</strong>
+                </div>
+                <div class="stat">
+                  <span>Total do pedido</span>
+                  <strong id="orderTotalStat">R$ 0,00</strong>
+                </div>
+                <div class="stat">
+                  <span>Valor por boleto</span>
+                  <strong id="installmentValueStat">R$ 0,00</strong>
+                </div>
+              </div>
+
+              <button class="button" id="sendApprovalButton" type="button">Enviar para aprovacao</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h2>Produtos enviados da lista</h2>
+              <button class="button secondary" id="selectAllButton" type="button">Selecionar todos</button>
+            </div>
+            <div class="panel-body" id="orderSelection"></div>
+            <div class="empty" id="orderEmpty">Selecione itens na lista e envie para o pedido.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="aprovacao" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Pedidos aguardando decisao do admin</h2>
+          </div>
+          <div id="approvalList"></div>
+          <div class="empty" id="approvalEmpty">Nenhum pedido enviado para aprovacao.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="recebimento" aria-labelledby="pageTitle">
+        <div class="summary-grid">
+          <div class="stat">
+            <span>Mes do recebimento</span>
+            <input class="input" id="receivingMonthInput" type="month">
+          </div>
+          <div class="stat">
+            <span>Recebido no mes</span>
+            <strong id="receivedMonthTotalStat">R$ 0,00</strong>
+            <span class="muted" id="receivedMonthCountStat">0 pedido(s) confirmado(s)</span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Conferencia de pedidos aprovados</h2>
+          </div>
+          <div id="receivingList"></div>
+          <div class="empty" id="receivingEmpty">Nenhum pedido aprovado aguardando recebimento.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="pedidoConcluido" aria-labelledby="pageTitle">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Pedidos concluidos</h2>
+          </div>
+          <div id="completedOrderList"></div>
+          <div class="empty" id="completedOrderEmpty">Nenhum pedido concluido.</div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="alertas" aria-labelledby="pageTitle">
+        <div class="panel"><div class="panel-header"><h2>Pendencias operacionais</h2></div><div id="alertsList"></div><div class="empty" id="alertsEmpty">Nenhuma pendencia no momento.</div></div>
+      </section>
+
+      <section class="tab-panel" id="seguranca" aria-labelledby="pageTitle">
+        <div class="order-layout">
+          <div class="panel">
+            <div class="panel-header"><h2>Alterar senha</h2></div>
+            <div class="panel-body form-grid">
+              <div class="field full"><label for="newPasswordInput">Nova senha</label><input class="input" id="newPasswordInput" type="password" minlength="10" autocomplete="new-password"></div>
+              <div class="field full"><label for="confirmPasswordInput">Confirmar nova senha</label><input class="input" id="confirmPasswordInput" type="password" minlength="10" autocomplete="new-password"></div>
+              <div class="inline-actions full"><button class="button" id="changePasswordButton" type="button">Alterar senha</button></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-header"><h2>Autenticacao em duas etapas</h2></div>
+            <div class="panel-body grid">
+              <p class="help-text">Use um aplicativo autenticador para proteger o acesso administrativo.</p>
+              <button class="button" id="startMfaButton" type="button">Configurar autenticador</button>
+              <div id="mfaEnrollment" style="display: none;">
+                <img id="mfaQrImage" alt="QR Code para autenticacao" class="mfa-qr">
+                <div class="field"><label for="mfaSecretInput">Chave manual</label><input class="input" id="mfaSecretInput" readonly></div>
+                <div class="field"><label for="mfaCodeInput">Codigo do aplicativo</label><input class="input" id="mfaCodeInput" inputmode="numeric" maxlength="6"></div>
+                <button class="button success" id="verifyMfaButton" type="button">Ativar MFA</button>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-header"><h2>Backup dos dados</h2></div>
+            <div class="panel-body grid">
+              <button class="button" id="exportBackupButton" type="button">Exportar backup JSON</button>
+              <div class="field"><label for="backupFileInput">Restaurar backup</label><input class="input" id="backupFileInput" type="file" accept="application/json,.json"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modalTitle">Detalhes do pedido</h2>
+        <div class="row-actions">
+          <button class="button secondary icon-only" id="closeModalButton" type="button" title="Fechar" aria-label="Fechar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="modalContent"></div>
+      <div class="modal-footer">
+        <button class="button secondary" id="printOrderButton" type="button">Imprimir / salvar PDF</button>
+        <button class="button" id="closeModalFooterButton" type="button">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
