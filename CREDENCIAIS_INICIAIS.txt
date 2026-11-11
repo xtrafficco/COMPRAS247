@@ -1,0 +1,27 @@
+=========================================================
+ SISTEMA DE COMPRAS - ACESSOS INICIAIS (Supabase ESTOQUE247)
+ Projeto: https://ydqgavcpefwcmqaebdnl.supabase.co
+ Gerado em: 11/11/2026
+=========================================================
+
+TROQUE TODAS AS SENHAS NO PRIMEIRO ACESSO.
+No sistema: perfil Admin > aba "Seguranca" > alterar senha.
+Depois de trocar, apague este arquivo.
+
+PERFIL            E-MAIL                      SENHA INICIAL
+-------------------------------------------------------------------
+Admin             admin@petville              Nw5FXdJ1sxkzYX#9
+Comprador         comprador@petville          OgcrSp9qYKaPuq#9
+LOJA ICONHA       lojaiconha@petville         7neq2cOGFDydha#9
+LOJA RETA         lojareta@petville           cpmFoHqwXYlrLE#9
+Compras internas  comprasinternas@petville    kgeYJhtrmzOc33#9
+
+Observacoes
+-----------
+* As senhas foram geradas aleatoriamente nesta instalacao.
+* Os e-mails nao sao caixas reais: servem apenas como login no
+  Supabase Auth. Por isso "Recuperar senha" nao envia e-mail para
+  esses enderecos - a troca de senha deve ser feita pela aba
+  "Seguranca" com o usuario logado, ou pelo painel do Supabase
+  (Authentication > Users).
+* O Admin pode ativar 2FA (TOTP) na aba "Seguranca".

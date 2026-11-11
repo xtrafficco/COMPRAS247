@@ -49,8 +49,8 @@ const defaultProducts = [
       comprasInternas: { role: "comprasInternas", profileRole: "compras_internas", name: "Compras internas", email: "comprasinternas@petville", tabs: ["listaIconha", "listaReta", "pedidoConcluido"] }
     };
 
-    const SUPABASE_URL = "https://jmbiuoqavknllfrghrid.supabase.co";
-    const SUPABASE_KEY = "sb_publishable_Rxp-5dX_CgdPrivRPfXfrA_BtKGIcbR";
+    const SUPABASE_URL = "https://ydqgavcpefwcmqaebdnl.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_ABUNhls7LVLz3Q7MgcrgcA_5adC7pem";
     const APP_STATE_ID = "main";
     const SALES_CLEAR_VERSION = "2026-07-14-clear-monthly-sales";
 
