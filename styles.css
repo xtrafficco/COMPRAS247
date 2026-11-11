@@ -644,9 +644,21 @@ a:focus-visible {
   align-items: center;
 }
 
-/* Separacao padrao de um bloco que segue outro DENTRO de um card */
-.block-gap {
-  margin-top: var(--gap-card);
+/* Secoes empilhadas DENTRO de um card seguem o mesmo ritmo dos cards entre si:
+   o espacamento e o gap da pilha, nunca margem de cada bloco. */
+.panel-body.stack {
+  display: grid;
+  align-content: start;
+  gap: var(--gap-card);
+}
+
+.panel-body.stack > * {
+  min-width: 0;
+}
+
+/* Botao solto na pilha mantem a largura do proprio rotulo. */
+.panel-body.stack > .button {
+  justify-self: start;
 }
 
 /* ===================== CARDS / PANELS ===================== */
@@ -1081,7 +1093,7 @@ tfoot .finance-total td:last-child {
 /* ===================== SIMULACAO DE PAGAMENTOS ===================== */
 
 .payment-sim {
-  margin: 0 0 var(--gap-card);
+  margin: 0;
   padding: var(--pad-card);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);

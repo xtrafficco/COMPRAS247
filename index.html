@@ -427,7 +427,7 @@
             <div class="panel-header">
               <h2>Cadastrar fornecedor</h2>
             </div>
-            <div class="panel-body">
+            <div class="panel-body stack">
               <div class="form-grid">
                 <div class="field">
                   <label for="supplierNameInput">Nome</label>
@@ -450,7 +450,7 @@
                   <textarea class="textarea" id="supplierNotesInput" placeholder="Dados bancarios, prazo, politica comercial..."></textarea>
                 </div>
               </div>
-              <div class="inline-actions block-gap">
+              <div class="inline-actions">
                 <button class="button" id="saveSupplierButton" type="button">Salvar fornecedor</button>
                 <button class="button secondary" id="clearSupplierButton" type="button">Limpar formulario</button>
               </div>
@@ -526,7 +526,7 @@
               <div class="price-legend"><span><i class="legend-cost"></i>Custo</span><span><i class="legend-sale"></i>Venda</span></div>
             </div>
           </div>
-          <div class="panel-body">
+          <div class="panel-body stack">
             <div class="price-history-chart" id="priceHistoryChart"></div>
             <div class="empty" id="priceHistoryChartEmpty">Ainda nao existem dados para montar o grafico.</div>
           </div>
@@ -615,7 +615,7 @@
             <div class="panel-header">
               <h2>Dados do pedido</h2>
             </div>
-            <div class="panel-body">
+            <div class="panel-body stack">
               <div class="form-grid">
                 <div class="field">
                   <label for="supplierSelect">Fornecedor</label>
@@ -659,7 +659,7 @@
                 </div>
               </div>
 
-              <div class="summary-grid block-gap">
+              <div class="summary-grid">
                 <div class="stat">
                   <span>Itens selecionados</span>
                   <strong id="orderItemsStat">0</strong>

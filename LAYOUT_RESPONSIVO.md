@@ -119,3 +119,48 @@ Checado também: a tabela do catálogo (1.389px de largura) rola **dentro do car
 e não arrasta a página; o modal cabe na tela a 320px; o card de login fica
 centrado com 17px de folga de cada lado a 320px; a gaveta abre em `translateX(0)`
 com o fundo visível e fecha pelos cinco caminhos.
+
+---
+
+## 4. Correção: seções empilhadas dentro de um card
+
+A primeira passagem padronizou a distância **entre cards**, mas deixou de fora o
+empilhamento **dentro** de um card. No card *Dados do pedido* isso aparecia:
+
+| Par de blocos | Antes | Vinha de |
+|---|---|---|
+| formulário → indicadores | 20px | `.block-gap` |
+| indicadores → simulação de pagamentos | **0px** | nada |
+| simulação → botão Enviar | 20px | `margin-bottom` da `.payment-sim` |
+
+Ou seja, os três indicadores ficavam colados na faixa de simulação, e as outras
+duas distâncias só batiam por coincidência de dois valores escritos em lugares
+diferentes.
+
+A correção é a mesma ideia aplicada às abas: quem define o espaçamento é a pilha,
+não cada bloco.
+
+```css
+.panel-body.stack {
+  display: grid;
+  align-content: start;
+  gap: var(--gap-card);
+}
+
+/* Botão solto na pilha mantém a largura do próprio rótulo. */
+.panel-body.stack > .button {
+  justify-self: start;
+}
+```
+
+Aplicado em `.panel-body` que empilha seções: *Dados do pedido*,
+*Cadastrar fornecedor* e o gráfico do *Histórico de preços*. A classe utilitária
+`.block-gap` e a `margin-bottom` da `.payment-sim` foram removidas — ninguém mais
+carrega margem própria.
+
+Medido depois da correção, a 1.280px: os quatro blocos do card do pedido
+(formulário, indicadores, simulação, botão) separados por **20px cada**, o mesmo
+valor que separa os cards entre si, e o botão mantendo seus 180px de largura em
+vez de esticar. Auditoria completa repetida em 360, 768, 1024, 1440 e 1920px,
+agora cobrindo também as pilhas internas: nenhuma distância fora do padrão e
+nenhum transbordo.
