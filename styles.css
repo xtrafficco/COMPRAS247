@@ -799,6 +799,33 @@ a:focus-visible {
   padding: var(--pad-card);
 }
 
+/* Grupo de filtros no cabecalho de um card: quebra em vez de transbordar. */
+.header-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.header-filters > .select {
+  width: auto;
+  min-width: 170px;
+  flex: 0 1 auto;
+}
+
+@media (max-width: 560px) {
+  .header-filters {
+    width: 100%;
+  }
+
+  .header-filters > .select {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+
 /* ===================== TABLES ===================== */
 
 .table-wrap {

@@ -167,11 +167,19 @@
         <div class="panel">
           <div class="panel-header">
             <h2>Catalogo em lista</h2>
-            <select class="select" id="catalogStatusFilter" aria-label="Situacao dos produtos">
-              <option value="active">Produtos ativos</option>
-              <option value="archived">Produtos arquivados</option>
-              <option value="all">Todos os produtos</option>
-            </select>
+            <div class="header-filters">
+              <select class="select" id="catalogAbcFilter" aria-label="Curva ABC">
+                <option value="all">Todas as curvas</option>
+                <option value="A">Classe A</option>
+                <option value="B">Classe B</option>
+                <option value="C">Classe C</option>
+              </select>
+              <select class="select" id="catalogStatusFilter" aria-label="Situacao dos produtos">
+                <option value="active">Produtos ativos</option>
+                <option value="archived">Produtos arquivados</option>
+                <option value="all">Todos os produtos</option>
+              </select>
+            </div>
           </div>
           <div class="table-wrap">
             <table>

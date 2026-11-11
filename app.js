@@ -1261,6 +1261,32 @@ const defaultProducts = [
       return totalSales * (Number(product.price) || 0);
     }
 
+    // Classe mostrada na coluna ABC. Produto arquivado fica fora do ranking
+    // (abcMap so recebe ativos), entao cai em C - e o filtro segue a coluna.
+    function productAbcClass(product, abc) {
+      return abc[product.id] || "C";
+    }
+
+    // Mostra no seletor quantos produtos cairiam em cada curva com os demais
+    // filtros ja aplicados, para a escolha nao virar tentativa e erro.
+    function updateAbcFilterCounts(products, abc) {
+      const select = document.getElementById("catalogAbcFilter");
+      if (!select) return;
+      const counts = { A: 0, B: 0, C: 0 };
+      products.forEach((product) => {
+        counts[productAbcClass(product, abc)] += 1;
+      });
+      const labels = {
+        all: `Todas as curvas (${products.length})`,
+        A: `Classe A (${counts.A})`,
+        B: `Classe B (${counts.B})`,
+        C: `Classe C (${counts.C})`
+      };
+      [...select.options].forEach((option) => {
+        if (labels[option.value]) option.textContent = labels[option.value];
+      });
+    }
+
     function abcMap(products) {
       const ranked = [...products]
         .map((product) => ({ product, value: productSalesValue(product) }))
@@ -1606,8 +1632,14 @@ const defaultProducts = [
       const statusFilter = document.getElementById("catalogStatusFilter");
       statusFilter.style.display = isAdmin() ? "block" : "none";
       const selectedStatus = isAdmin() ? statusFilter.value : "active";
+      // A curva ABC so e exibida para quem ve indicadores; para loja o filtro some.
+      const abcFilter = document.getElementById("catalogAbcFilter");
+      abcFilter.style.display = isStoreUser() ? "none" : "block";
+      const selectedAbc = isStoreUser() ? "all" : abcFilter.value;
+      const abc = abcMap(state.products.filter((product) => product.active !== false));
       const listedProductIds = new Set(activeList().map((item) => item.productId));
-      const filtered = state.products.filter((product) => {
+      // Os dois primeiros filtros definem o universo; a contagem por curva sai dele.
+      const beforeAbc = state.products.filter((product) => {
         if (listedProductIds.has(product.id)) return false;
         const matchesTerm = normalizeName(product.name).includes(term) || normalizeName(product.code).includes(term);
         const matchesStatus = selectedStatus === "all" ||
@@ -1615,7 +1647,10 @@ const defaultProducts = [
           (selectedStatus === "archived" && product.active === false);
         return matchesTerm && matchesStatus;
       });
-      const abc = abcMap(state.products.filter((product) => product.active !== false));
+      updateAbcFilterCounts(beforeAbc, abc);
+      const filtered = selectedAbc === "all"
+        ? beforeAbc
+        : beforeAbc.filter((product) => productAbcClass(product, abc) === selectedAbc);
       const showPrices = !isStoreUser();
       const showIndicators = !isStoreUser();
       const showAdminDelete = currentUser?.role === "admin";
@@ -1637,7 +1672,7 @@ const defaultProducts = [
       document.getElementById("catalogTable").innerHTML = visibleProducts.map((product) => `
         ${(() => {
           const trend = trendInfo(product);
-          const abcClass = abc[product.id] || "C";
+          const abcClass = productAbcClass(product, abc);
           const priceCells = showPrices ? `
           <td><strong>${money(Number(product.price) || 0)}</strong></td>
           <td><strong>${money(Number(product.salePrice) || 0)}</strong></td>
@@ -3047,6 +3082,10 @@ const defaultProducts = [
       renderCatalog();
     });
     document.getElementById("catalogStatusFilter").addEventListener("change", () => {
+      catalogPage = 1;
+      renderCatalog();
+    });
+    document.getElementById("catalogAbcFilter").addEventListener("change", () => {
       catalogPage = 1;
       renderCatalog();
     });
