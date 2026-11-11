@@ -206,3 +206,44 @@ npx -y http-server . -p 5599 -c-1
 ```
 
 Também já existe `.claude/launch.json` com essa configuração.
+
+
+---
+
+## 5. Exclusão dos produtos de granel ("KILO ...") — 11/11/2026
+
+**150 produtos apagados em definitivo**, a pedido, por serem itens vendidos a
+quilo no varejo (KILO ALPISTE, KILO MILHO, KILO ZORRO CAT...) e não unidades de
+compra. O casamento foi exato: todos começavam com `KILO `, nenhum tinha "kilo"
+no meio do nome e não havia nenhum "quilo".
+
+Foi exclusão real, não arquivamento. Junto com os produtos foram embora, por
+`ON DELETE CASCADE`:
+
+| | Antes | Depois |
+|---|---|---|
+| `purchase_products` | 1.802 | 1.652 |
+| `purchase_sales` | 6.592 | 5.609 |
+| `purchase_price_history` | 1.802 | 1.652 |
+
+As 983 linhas de venda removidas somavam 30.980,50 em quantidade e cerca de
+**R$ 288 mil** — uns 23% do faturamento de jan a out/2026. Esse valor não aparece
+mais em nenhum relatório do sistema.
+
+**Backup antes de apagar:** `backup-produtos-kilo-removidos.json` (dados
+completos, com as vendas mês a mês) e `backup-produtos-kilo-removidos.csv`
+(planilha). É a única via de recuperação — o banco não tem volta.
+
+Nenhum dos 150 estava em lista aberta, pedido ou cotação, então nada ficou órfão.
+O `app_state` foi reconstruído a partir das tabelas, preservando fornecedores,
+pedidos, ajustes e auditoria, e o evento ficou registrado na aba *Auditoria*.
+
+Efeito colateral esperado: a **curva ABC foi recalculada** sobre o catálogo que
+sobrou, porque o granel pesava bastante no faturamento.
+
+| | Antes | Depois |
+|---|---|---|
+| Classe A | 164 | 126 |
+| Classe B | 358 | 355 |
+| Classe C | 1.266 | 1.158 |
+| Ativos no catálogo | 1.788 | 1.639 |

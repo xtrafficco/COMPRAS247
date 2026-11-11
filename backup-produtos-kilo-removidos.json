@@ -1,0 +1,5286 @@
+{
+ "gerado_em": "2026-11-11T15:27:30.076Z",
+ "motivo": "Exclusao definitiva dos produtos de granel (\"KILO ...\") do catalogo de compras",
+ "totais": {
+  "produtos": 150,
+  "linhas_de_venda": 983,
+  "linhas_historico_preco": 150
+ },
+ "produtos": [
+  {
+   "codigo": "1001",
+   "nome": "KILO ALPISTE",
+   "custo": 6.44,
+   "venda": 12.7,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 70.87
+    },
+    {
+     "mes": 2,
+     "quantidade": 68.76
+    },
+    {
+     "mes": 3,
+     "quantidade": 65.96
+    },
+    {
+     "mes": 4,
+     "quantidade": 67.36
+    },
+    {
+     "mes": 5,
+     "quantidade": 85.36
+    },
+    {
+     "mes": 6,
+     "quantidade": 84.3
+    },
+    {
+     "mes": 7,
+     "quantidade": 81.8
+    },
+    {
+     "mes": 8,
+     "quantidade": 90.97
+    },
+    {
+     "mes": 9,
+     "quantidade": 87.64
+    },
+    {
+     "mes": 10,
+     "quantidade": 76.79
+    }
+   ]
+  },
+  {
+   "codigo": "89542",
+   "nome": "KILO ANIMADOG AD (19% PRO)",
+   "custo": 3.13,
+   "venda": 5.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 3.36
+    },
+    {
+     "mes": 3,
+     "quantidade": 21.86
+    },
+    {
+     "mes": 4,
+     "quantidade": 25.23
+    },
+    {
+     "mes": 5,
+     "quantidade": 27.5
+    },
+    {
+     "mes": 6,
+     "quantidade": 82.49
+    },
+    {
+     "mes": 7,
+     "quantidade": 70.41
+    },
+    {
+     "mes": 8,
+     "quantidade": 44.26
+    },
+    {
+     "mes": 9,
+     "quantidade": 80.47
+    },
+    {
+     "mes": 10,
+     "quantidade": 90.54
+    }
+   ]
+  },
+  {
+   "codigo": "1715",
+   "nome": "KILO ANIMADOG F",
+   "custo": 5.6,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 10,
+     "quantidade": 11.89
+    }
+   ]
+  },
+  {
+   "codigo": "17033",
+   "nome": "KILO ANIMADOG RP",
+   "custo": 5.6,
+   "venda": 8.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 10,
+     "quantidade": 16.35
+    }
+   ]
+  },
+  {
+   "codigo": "17297",
+   "nome": "KILO ARROZ CATETO",
+   "custo": 7.58,
+   "venda": 12.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.22
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.22
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.22
+    },
+    {
+     "mes": 4,
+     "quantidade": 0.66
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.65
+    },
+    {
+     "mes": 6,
+     "quantidade": 0.41
+    },
+    {
+     "mes": 9,
+     "quantidade": 0.41
+    }
+   ]
+  },
+  {
+   "codigo": "75666",
+   "nome": "KILO ASATROPICA EXTRUSADA CALOPSITA COM FRUTAS",
+   "custo": 15.45,
+   "venda": 24.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.25
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.19
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.51
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.25
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.74
+    },
+    {
+     "mes": 6,
+     "quantidade": 2.87
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.87
+    },
+    {
+     "mes": 8,
+     "quantidade": 3.82
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.39
+    },
+    {
+     "mes": 10,
+     "quantidade": 1.43
+    }
+   ]
+  },
+  {
+   "codigo": "7329",
+   "nome": "KILO ASATROPICA FARINHADA ALTA PERFORMANCE",
+   "custo": 23.28,
+   "venda": 36,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.62
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.54
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.46
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.85
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.92
+    },
+    {
+     "mes": 6,
+     "quantidade": 3.85
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.89
+    },
+    {
+     "mes": 8,
+     "quantidade": 0.96
+    },
+    {
+     "mes": 9,
+     "quantidade": 1.61
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.64
+    }
+   ]
+  },
+  {
+   "codigo": "80004",
+   "nome": "KILO ASATROPICA FLOCADA AMARELA",
+   "custo": 0,
+   "venda": 15,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.24
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.73
+    }
+   ]
+  },
+  {
+   "codigo": "16877",
+   "nome": "KILO ASATROPICA FRUTA MIX",
+   "custo": 18.62,
+   "venda": 27.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.62
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.93
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.62
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.51
+    },
+    {
+     "mes": 6,
+     "quantidade": 4.11
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.05
+    },
+    {
+     "mes": 8,
+     "quantidade": 1.02
+    },
+    {
+     "mes": 9,
+     "quantidade": 0.51
+    }
+   ]
+  },
+  {
+   "codigo": "1845",
+   "nome": "KILO ASATROPICA FRUTAS",
+   "custo": 29.15,
+   "venda": 45.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.69
+    },
+    {
+     "mes": 2,
+     "quantidade": 5.53
+    },
+    {
+     "mes": 3,
+     "quantidade": 6.64
+    },
+    {
+     "mes": 4,
+     "quantidade": 4.79
+    },
+    {
+     "mes": 5,
+     "quantidade": 3.53
+    },
+    {
+     "mes": 6,
+     "quantidade": 3.76
+    },
+    {
+     "mes": 7,
+     "quantidade": 3.76
+    },
+    {
+     "mes": 8,
+     "quantidade": 3.76
+    },
+    {
+     "mes": 9,
+     "quantidade": 5.14
+    },
+    {
+     "mes": 10,
+     "quantidade": 4.79
+    }
+   ]
+  },
+  {
+   "codigo": "9741",
+   "nome": "KILO ASATROPICA INSETOS",
+   "custo": 30.36,
+   "venda": 45.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.69
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.1
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.69
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.26
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.04
+    },
+    {
+     "mes": 6,
+     "quantidade": 1.29
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.33
+    },
+    {
+     "mes": 8,
+     "quantidade": 1.04
+    },
+    {
+     "mes": 9,
+     "quantidade": 1.29
+    },
+    {
+     "mes": 10,
+     "quantidade": 1.81
+    }
+   ]
+  },
+  {
+   "codigo": "50004",
+   "nome": "KILO ASATROPICA MAMÃO",
+   "custo": 12.65,
+   "venda": 19.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.95
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.74
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.17
+    },
+    {
+     "mes": 4,
+     "quantidade": 2.35
+    },
+    {
+     "mes": 5,
+     "quantidade": 3.34
+    },
+    {
+     "mes": 6,
+     "quantidade": 3.58
+    },
+    {
+     "mes": 7,
+     "quantidade": 3.07
+    },
+    {
+     "mes": 8,
+     "quantidade": 4.6
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.56
+    },
+    {
+     "mes": 10,
+     "quantidade": 8.18
+    }
+   ]
+  },
+  {
+   "codigo": "17149",
+   "nome": "KILO ASATROPICA NATURAL",
+   "custo": 25.33,
+   "venda": 39.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 8.07
+    },
+    {
+     "mes": 2,
+     "quantidade": 8.07
+    },
+    {
+     "mes": 3,
+     "quantidade": 10.25
+    },
+    {
+     "mes": 4,
+     "quantidade": 6.6
+    },
+    {
+     "mes": 5,
+     "quantidade": 8.3
+    },
+    {
+     "mes": 6,
+     "quantidade": 5.32
+    },
+    {
+     "mes": 7,
+     "quantidade": 6.96
+    },
+    {
+     "mes": 8,
+     "quantidade": 6.96
+    },
+    {
+     "mes": 9,
+     "quantidade": 9
+    },
+    {
+     "mes": 10,
+     "quantidade": 11.45
+    }
+   ]
+  },
+  {
+   "codigo": "9877",
+   "nome": "KILO ASATROPICA NATURE-25",
+   "custo": 28,
+   "venda": 41,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 0.37
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.37
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.09
+    },
+    {
+     "mes": 6,
+     "quantidade": 0.09
+    },
+    {
+     "mes": 9,
+     "quantidade": 0.09
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.09
+    }
+   ]
+  },
+  {
+   "codigo": "17296",
+   "nome": "KILO ASATROPICA OVOS E MEL",
+   "custo": 13.51,
+   "venda": 21.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.7
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.09
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.7
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.4
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.7
+    },
+    {
+     "mes": 6,
+     "quantidade": 3.75
+    },
+    {
+     "mes": 7,
+     "quantidade": 4.5
+    },
+    {
+     "mes": 8,
+     "quantidade": 3.75
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.25
+    },
+    {
+     "mes": 10,
+     "quantidade": 2.25
+    }
+   ]
+  },
+  {
+   "codigo": "16837",
+   "nome": "KILO ASATROPICA POWER PEPPER",
+   "custo": 23.33,
+   "venda": 35.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.55
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.55
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.21
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.66
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.87
+    },
+    {
+     "mes": 6,
+     "quantidade": 0.62
+    },
+    {
+     "mes": 7,
+     "quantidade": 0.93
+    },
+    {
+     "mes": 9,
+     "quantidade": 1.25
+    }
+   ]
+  },
+  {
+   "codigo": "5046",
+   "nome": "KILO ASATROPICA PROTEÍNA PREMIUM",
+   "custo": 26.45,
+   "venda": 43.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 2.83
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.42
+    },
+    {
+     "mes": 3,
+     "quantidade": 4.6
+    },
+    {
+     "mes": 4,
+     "quantidade": 3.19
+    },
+    {
+     "mes": 5,
+     "quantidade": 3.51
+    },
+    {
+     "mes": 6,
+     "quantidade": 2.32
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.9
+    },
+    {
+     "mes": 8,
+     "quantidade": 2.03
+    },
+    {
+     "mes": 9,
+     "quantidade": 1.74
+    },
+    {
+     "mes": 10,
+     "quantidade": 3.46
+    }
+   ]
+  },
+  {
+   "codigo": "7330",
+   "nome": "KILO ASATROPICA SILVESTRE",
+   "custo": 19.01,
+   "venda": 30.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.3
+    },
+    {
+     "mes": 2,
+     "quantidade": 5.26
+    },
+    {
+     "mes": 3,
+     "quantidade": 3.96
+    },
+    {
+     "mes": 4,
+     "quantidade": 3.96
+    },
+    {
+     "mes": 5,
+     "quantidade": 5.08
+    },
+    {
+     "mes": 6,
+     "quantidade": 6.68
+    },
+    {
+     "mes": 7,
+     "quantidade": 5.43
+    },
+    {
+     "mes": 8,
+     "quantidade": 7.94
+    },
+    {
+     "mes": 9,
+     "quantidade": 5.43
+    },
+    {
+     "mes": 10,
+     "quantidade": 5.01
+    }
+   ]
+  },
+  {
+   "codigo": "1733",
+   "nome": "KILO AVATAR AD (19% PRO)",
+   "custo": 3.71,
+   "venda": 6.2,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 17.36
+    },
+    {
+     "mes": 2,
+     "quantidade": 19.54
+    },
+    {
+     "mes": 3,
+     "quantidade": 30.39
+    },
+    {
+     "mes": 4,
+     "quantidade": 23.88
+    },
+    {
+     "mes": 5,
+     "quantidade": 23.77
+    },
+    {
+     "mes": 6,
+     "quantidade": 38.85
+    },
+    {
+     "mes": 7,
+     "quantidade": 38.85
+    },
+    {
+     "mes": 8,
+     "quantidade": 94.71
+    },
+    {
+     "mes": 9,
+     "quantidade": 41.28
+    },
+    {
+     "mes": 10,
+     "quantidade": 26.71
+    }
+   ]
+  },
+  {
+   "codigo": "17202",
+   "nome": "KILO AVATAR PREMIUM",
+   "custo": 3.6,
+   "venda": 6.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 29.22
+    },
+    {
+     "mes": 2,
+     "quantidade": 58.43
+    },
+    {
+     "mes": 3,
+     "quantidade": 22.96
+    },
+    {
+     "mes": 4,
+     "quantidade": 25.04
+    },
+    {
+     "mes": 5,
+     "quantidade": 41.96
+    },
+    {
+     "mes": 6,
+     "quantidade": 42.74
+    },
+    {
+     "mes": 7,
+     "quantidade": 31.09
+    },
+    {
+     "mes": 8,
+     "quantidade": 71.88
+    },
+    {
+     "mes": 9,
+     "quantidade": 27.2
+    },
+    {
+     "mes": 10,
+     "quantidade": 71.89
+    }
+   ]
+  },
+  {
+   "codigo": "1005",
+   "nome": "KILO AVEIA SEM CASCA",
+   "custo": 5.22,
+   "venda": 8.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 5.3
+    },
+    {
+     "mes": 2,
+     "quantidade": 8.48
+    },
+    {
+     "mes": 3,
+     "quantidade": 11.66
+    },
+    {
+     "mes": 4,
+     "quantidade": 9.54
+    },
+    {
+     "mes": 5,
+     "quantidade": 11.24
+    },
+    {
+     "mes": 6,
+     "quantidade": 12.26
+    },
+    {
+     "mes": 7,
+     "quantidade": 9.2
+    },
+    {
+     "mes": 8,
+     "quantidade": 16.36
+    },
+    {
+     "mes": 9,
+     "quantidade": 12.26
+    },
+    {
+     "mes": 10,
+     "quantidade": 14.31
+    }
+   ]
+  },
+  {
+   "codigo": "1789",
+   "nome": "KILO AVEVITA BANANA ESCURA AROMATIZADA",
+   "custo": 5.6,
+   "venda": 9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 22.84
+    },
+    {
+     "mes": 2,
+     "quantidade": 16.42
+    },
+    {
+     "mes": 3,
+     "quantidade": 23.55
+    },
+    {
+     "mes": 4,
+     "quantidade": 18.56
+    },
+    {
+     "mes": 5,
+     "quantidade": 16.2
+    },
+    {
+     "mes": 6,
+     "quantidade": 17.88
+    },
+    {
+     "mes": 7,
+     "quantidade": 14.9
+    },
+    {
+     "mes": 8,
+     "quantidade": 19.36
+    },
+    {
+     "mes": 9,
+     "quantidade": 18.62
+    },
+    {
+     "mes": 10,
+     "quantidade": 15.64
+    }
+   ]
+  },
+  {
+   "codigo": "48847",
+   "nome": "KILO AVEVITA DE BANANA AMARELA",
+   "custo": 9.86,
+   "venda": 15.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 3,
+     "quantidade": 1.36
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.37
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.37
+    },
+    {
+     "mes": 6,
+     "quantidade": 3.71
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.47
+    },
+    {
+     "mes": 8,
+     "quantidade": 0.82
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.47
+    },
+    {
+     "mes": 10,
+     "quantidade": 4.13
+    }
+   ]
+  },
+  {
+   "codigo": "36415",
+   "nome": "KILO BILLY CAT CASTRADO SAL E FRANGO",
+   "custo": 5.5,
+   "venda": 11.5,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "5558",
+   "nome": "KILO BILLY DOG AD CASTRADO",
+   "custo": 8,
+   "venda": 14,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 6,
+     "quantidade": 4.18
+    },
+    {
+     "mes": 7,
+     "quantidade": 6.27
+    },
+    {
+     "mes": 8,
+     "quantidade": 2.09
+    }
+   ]
+  },
+  {
+   "codigo": "86985",
+   "nome": "KILO BILLY DOG F CARNE AO LEITE",
+   "custo": 4.6,
+   "venda": 8.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 37.38
+    },
+    {
+     "mes": 2,
+     "quantidade": 38.77
+    },
+    {
+     "mes": 3,
+     "quantidade": 31.85
+    },
+    {
+     "mes": 4,
+     "quantidade": 51.23
+    },
+    {
+     "mes": 5,
+     "quantidade": 54.55
+    },
+    {
+     "mes": 6,
+     "quantidade": 92.57
+    },
+    {
+     "mes": 7,
+     "quantidade": 77.14
+    },
+    {
+     "mes": 8,
+     "quantidade": 7.71
+    },
+    {
+     "mes": 9,
+     "quantidade": 69.43
+    },
+    {
+     "mes": 10,
+     "quantidade": 30.86
+    }
+   ]
+  },
+  {
+   "codigo": "39999",
+   "nome": "KILO BILLY DOG FILHOTE MIX",
+   "custo": 7.5,
+   "venda": 9.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.74
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.87
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.93
+    }
+   ]
+  },
+  {
+   "codigo": "17431",
+   "nome": "KILO BILLY DOG OSSINHO AD (20% PRO)",
+   "custo": 3.46,
+   "venda": 6.2,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 135.88
+    },
+    {
+     "mes": 2,
+     "quantidade": 15.1
+    },
+    {
+     "mes": 3,
+     "quantidade": 79.26
+    },
+    {
+     "mes": 4,
+     "quantidade": 79.26
+    },
+    {
+     "mes": 5,
+     "quantidade": 83.72
+    },
+    {
+     "mes": 6,
+     "quantidade": 109.3
+    },
+    {
+     "mes": 7,
+     "quantidade": 109.29
+    },
+    {
+     "mes": 8,
+     "quantidade": 40.15
+    },
+    {
+     "mes": 9,
+     "quantidade": 102.6
+    },
+    {
+     "mes": 10,
+     "quantidade": 80.3
+    }
+   ]
+  },
+  {
+   "codigo": "17428",
+   "nome": "KILO BILLY DOG REFEIÇAO DIARIA AD (22% PRO)",
+   "custo": 4.06,
+   "venda": 8,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 84.34
+    },
+    {
+     "mes": 2,
+     "quantidade": 40.06
+    },
+    {
+     "mes": 3,
+     "quantidade": 35.84
+    },
+    {
+     "mes": 4,
+     "quantidade": 29.52
+    },
+    {
+     "mes": 5,
+     "quantidade": 73.73
+    },
+    {
+     "mes": 6,
+     "quantidade": 48.26
+    },
+    {
+     "mes": 7,
+     "quantidade": 35.1
+    },
+    {
+     "mes": 8,
+     "quantidade": 50.45
+    },
+    {
+     "mes": 9,
+     "quantidade": 28.52
+    },
+    {
+     "mes": 10,
+     "quantidade": 21.94
+    }
+   ]
+  },
+  {
+   "codigo": "40005",
+   "nome": "KILO BILLY DOG REFEIÇAO DIARIA F",
+   "custo": 4.56,
+   "venda": 8.6,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 9,
+     "quantidade": 0.75
+    }
+   ]
+  },
+  {
+   "codigo": "17424",
+   "nome": "KILO BILLY DOG RP",
+   "custo": 4.9,
+   "venda": 8.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 17.16
+    },
+    {
+     "mes": 2,
+     "quantidade": 14.04
+    },
+    {
+     "mes": 3,
+     "quantidade": 42.11
+    },
+    {
+     "mes": 4,
+     "quantidade": 67.05
+    },
+    {
+     "mes": 5,
+     "quantidade": 85.06
+    },
+    {
+     "mes": 6,
+     "quantidade": 51.45
+    },
+    {
+     "mes": 7,
+     "quantidade": 111.19
+    },
+    {
+     "mes": 8,
+     "quantidade": 71.36
+    },
+    {
+     "mes": 9,
+     "quantidade": 116.18
+    },
+    {
+     "mes": 10,
+     "quantidade": 3.32
+    }
+   ]
+  },
+  {
+   "codigo": "59665",
+   "nome": "KILO BIONATURAL CAES AD RMG FRANGO",
+   "custo": 11.52,
+   "venda": 19.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 4,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "50106",
+   "nome": "KILO BIONATURAL CAES AD RP CORDEIRO",
+   "custo": 13.53,
+   "venda": 21.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 4.36
+    },
+    {
+     "mes": 2,
+     "quantidade": 9.8
+    },
+    {
+     "mes": 3,
+     "quantidade": 8.71
+    },
+    {
+     "mes": 4,
+     "quantidade": 16.35
+    },
+    {
+     "mes": 5,
+     "quantidade": 17.42
+    }
+   ]
+  },
+  {
+   "codigo": "59873",
+   "nome": "KILO BIONATURAL GATOS CASTR SALMAO",
+   "custo": 14.95,
+   "venda": 22.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 30.93
+    },
+    {
+     "mes": 2,
+     "quantidade": 38.92
+    },
+    {
+     "mes": 3,
+     "quantidade": 52.88
+    },
+    {
+     "mes": 4,
+     "quantidade": 54.88
+    },
+    {
+     "mes": 5,
+     "quantidade": 49.64
+    },
+    {
+     "mes": 6,
+     "quantidade": 9.99
+    }
+   ]
+  },
+  {
+   "codigo": "6604",
+   "nome": "KILO BOM PETÍ GATOS SALMAO",
+   "custo": 6.64,
+   "venda": 11,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 62.76
+    },
+    {
+     "mes": 2,
+     "quantidade": 12.31
+    },
+    {
+     "mes": 5,
+     "quantidade": 17.98
+    },
+    {
+     "mes": 6,
+     "quantidade": 60.56
+    },
+    {
+     "mes": 7,
+     "quantidade": 23.75
+    },
+    {
+     "mes": 8,
+     "quantidade": 14.25
+    },
+    {
+     "mes": 9,
+     "quantidade": 33.25
+    },
+    {
+     "mes": 10,
+     "quantidade": 22.56
+    }
+   ]
+  },
+  {
+   "codigo": "1702",
+   "nome": "KILO CANJIQUINHA",
+   "custo": 2.88,
+   "venda": 4.8,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 84.8
+    },
+    {
+     "mes": 2,
+     "quantidade": 67.45
+    },
+    {
+     "mes": 3,
+     "quantidade": 57.81
+    },
+    {
+     "mes": 4,
+     "quantidade": 77.08
+    },
+    {
+     "mes": 5,
+     "quantidade": 71.65
+    },
+    {
+     "mes": 6,
+     "quantidade": 111.83
+    },
+    {
+     "mes": 7,
+     "quantidade": 84.4
+    },
+    {
+     "mes": 8,
+     "quantidade": 78.07
+    },
+    {
+     "mes": 9,
+     "quantidade": 109.72
+    },
+    {
+     "mes": 10,
+     "quantidade": 88.62
+    }
+   ]
+  },
+  {
+   "codigo": "16989",
+   "nome": "KILO CANJIQUINHA COM MEL",
+   "custo": 4.71,
+   "venda": 7.7,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 5,
+     "quantidade": 2
+    },
+    {
+     "mes": 7,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "50001",
+   "nome": "KILO CAT CHOW GATOS CARNE",
+   "custo": 11.1,
+   "venda": 17.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.48
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.48
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.9
+    },
+    {
+     "mes": 6,
+     "quantidade": 10.43
+    },
+    {
+     "mes": 7,
+     "quantidade": 31.27
+    },
+    {
+     "mes": 8,
+     "quantidade": 25.6
+    },
+    {
+     "mes": 9,
+     "quantidade": 14.22
+    },
+    {
+     "mes": 10,
+     "quantidade": 22.75
+    }
+   ]
+  },
+  {
+   "codigo": "4647",
+   "nome": "KILO CAT CHOW GATOS CASTR FRANGO",
+   "custo": 12.9,
+   "venda": 18.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 18.23
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.14
+    },
+    {
+     "mes": 3,
+     "quantidade": 7.5
+    },
+    {
+     "mes": 4,
+     "quantidade": 6.43
+    },
+    {
+     "mes": 5,
+     "quantidade": 24.72
+    },
+    {
+     "mes": 6,
+     "quantidade": 12.92
+    },
+    {
+     "mes": 7,
+     "quantidade": 17.23
+    },
+    {
+     "mes": 8,
+     "quantidade": 17.23
+    },
+    {
+     "mes": 9,
+     "quantidade": 16.15
+    },
+    {
+     "mes": 10,
+     "quantidade": 20.48
+    }
+   ]
+  },
+  {
+   "codigo": "1776",
+   "nome": "KILO CAT CHOW GATOS PEIXE",
+   "custo": 11.1,
+   "venda": 17.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 90.96
+    },
+    {
+     "mes": 2,
+     "quantidade": 26.62
+    },
+    {
+     "mes": 3,
+     "quantidade": 77.64
+    },
+    {
+     "mes": 4,
+     "quantidade": 80.97
+    },
+    {
+     "mes": 5,
+     "quantidade": 49.29
+    },
+    {
+     "mes": 6,
+     "quantidade": 48.65
+    },
+    {
+     "mes": 7,
+     "quantidade": 35.75
+    },
+    {
+     "mes": 8,
+     "quantidade": 35.75
+    },
+    {
+     "mes": 9,
+     "quantidade": 5.96
+    },
+    {
+     "mes": 10,
+     "quantidade": 36.74
+    }
+   ]
+  },
+  {
+   "codigo": "31781",
+   "nome": "KILO CC-2030 PREMIUM",
+   "custo": 18.66,
+   "venda": 31,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.62
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.15
+    },
+    {
+     "mes": 8,
+     "quantidade": 0.36
+    },
+    {
+     "mes": 9,
+     "quantidade": 0.54
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.18
+    }
+   ]
+  },
+  {
+   "codigo": "1703",
+   "nome": "KILO CODORNA",
+   "custo": 3.27,
+   "venda": 5.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 12.02
+    },
+    {
+     "mes": 2,
+     "quantidade": 8.58
+    },
+    {
+     "mes": 3,
+     "quantidade": 3.43
+    },
+    {
+     "mes": 4,
+     "quantidade": 6.87
+    },
+    {
+     "mes": 5,
+     "quantidade": 9.98
+    },
+    {
+     "mes": 6,
+     "quantidade": 17.46
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.18
+    },
+    {
+     "mes": 8,
+     "quantidade": 2.18
+    },
+    {
+     "mes": 9,
+     "quantidade": 6.55
+    },
+    {
+     "mes": 10,
+     "quantidade": 15.27
+    }
+   ]
+  },
+  {
+   "codigo": "1704",
+   "nome": "KILO COELHO",
+   "custo": 3.04,
+   "venda": 5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 27.77
+    },
+    {
+     "mes": 2,
+     "quantidade": 27.77
+    },
+    {
+     "mes": 3,
+     "quantidade": 29.31
+    },
+    {
+     "mes": 4,
+     "quantidade": 23.14
+    },
+    {
+     "mes": 5,
+     "quantidade": 32.61
+    },
+    {
+     "mes": 6,
+     "quantidade": 28.06
+    },
+    {
+     "mes": 7,
+     "quantidade": 31.17
+    },
+    {
+     "mes": 8,
+     "quantidade": 29.62
+    },
+    {
+     "mes": 9,
+     "quantidade": 31.18
+    },
+    {
+     "mes": 10,
+     "quantidade": 26.5
+    }
+   ]
+  },
+  {
+   "codigo": "8507",
+   "nome": "KILO CORRENTE GALVANIZADA 8MM",
+   "custo": 13.11,
+   "venda": 21,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.76
+    }
+   ]
+  },
+  {
+   "codigo": "1706",
+   "nome": "KILO CRESCIMENTO FRANGO",
+   "custo": 2.12,
+   "venda": 3.7,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 167.5
+    },
+    {
+     "mes": 2,
+     "quantidade": 173.78
+    },
+    {
+     "mes": 3,
+     "quantidade": 125.63
+    },
+    {
+     "mes": 4,
+     "quantidade": 108.88
+    },
+    {
+     "mes": 5,
+     "quantidade": 142.83
+    },
+    {
+     "mes": 6,
+     "quantidade": 142.43
+    },
+    {
+     "mes": 7,
+     "quantidade": 116.31
+    },
+    {
+     "mes": 8,
+     "quantidade": 168.54
+    },
+    {
+     "mes": 9,
+     "quantidade": 142.43
+    },
+    {
+     "mes": 10,
+     "quantidade": 185.14
+    }
+   ]
+  },
+  {
+   "codigo": "1009",
+   "nome": "KILO EXTRA GOLD MAMÃO",
+   "custo": 12.38,
+   "venda": 23,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 5,
+     "quantidade": 1
+    },
+    {
+     "mes": 7,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "4314",
+   "nome": "KILO FARINHADA BRANCA",
+   "custo": 5,
+   "venda": 10,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.19
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.18
+    }
+   ]
+  },
+  {
+   "codigo": "4315",
+   "nome": "KILO FARINHADA DE ESPINAFRE",
+   "custo": 5,
+   "venda": 10,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "256",
+   "nome": "KILO FARINHADA SILVESTRE",
+   "custo": 11.24,
+   "venda": 18.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.77
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.77
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.77
+    },
+    {
+     "mes": 4,
+     "quantidade": 2.29
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.84
+    },
+    {
+     "mes": 6,
+     "quantidade": 1.68
+    },
+    {
+     "mes": 7,
+     "quantidade": 7.56
+    },
+    {
+     "mes": 8,
+     "quantidade": 0.84
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.84
+    }
+   ]
+  },
+  {
+   "codigo": "1008",
+   "nome": "KILO GIRASSOL GIGANTE",
+   "custo": 8.4,
+   "venda": 13,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 22.97
+    },
+    {
+     "mes": 2,
+     "quantidade": 19.8
+    },
+    {
+     "mes": 3,
+     "quantidade": 21.39
+    },
+    {
+     "mes": 4,
+     "quantidade": 23.76
+    },
+    {
+     "mes": 5,
+     "quantidade": 22.36
+    },
+    {
+     "mes": 6,
+     "quantidade": 18.47
+    },
+    {
+     "mes": 7,
+     "quantidade": 20.88
+    },
+    {
+     "mes": 8,
+     "quantidade": 24.88
+    },
+    {
+     "mes": 9,
+     "quantidade": 24.09
+    },
+    {
+     "mes": 10,
+     "quantidade": 18.47
+    }
+   ]
+  },
+  {
+   "codigo": "1007",
+   "nome": "KILO GIRASSOL PEQUENO",
+   "custo": 7.3,
+   "venda": 12,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 17.89
+    },
+    {
+     "mes": 2,
+     "quantidade": 18.44
+    },
+    {
+     "mes": 3,
+     "quantidade": 16.21
+    },
+    {
+     "mes": 4,
+     "quantidade": 13.98
+    },
+    {
+     "mes": 5,
+     "quantidade": 15
+    },
+    {
+     "mes": 6,
+     "quantidade": 15.98
+    },
+    {
+     "mes": 7,
+     "quantidade": 13.92
+    },
+    {
+     "mes": 8,
+     "quantidade": 17.01
+    },
+    {
+     "mes": 9,
+     "quantidade": 14.43
+    },
+    {
+     "mes": 10,
+     "quantidade": 18.04
+    }
+   ]
+  },
+  {
+   "codigo": "32244",
+   "nome": "KILO GOLDEN F",
+   "custo": 9.73,
+   "venda": 14.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 11.7
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.13
+    },
+    {
+     "mes": 3,
+     "quantidade": 7.45
+    },
+    {
+     "mes": 4,
+     "quantidade": 5.32
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.06
+    }
+   ]
+  },
+  {
+   "codigo": "32880",
+   "nome": "KILO GOLDEN GATOS CASTR",
+   "custo": 14.16,
+   "venda": 22.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 28.37
+    },
+    {
+     "mes": 2,
+     "quantidade": 21.02
+    },
+    {
+     "mes": 3,
+     "quantidade": 38.87
+    },
+    {
+     "mes": 4,
+     "quantidade": 21.02
+    },
+    {
+     "mes": 5,
+     "quantidade": 6.44
+    },
+    {
+     "mes": 6,
+     "quantidade": 26.32
+    },
+    {
+     "mes": 7,
+     "quantidade": 14.26
+    },
+    {
+     "mes": 8,
+     "quantidade": 18.64
+    },
+    {
+     "mes": 9,
+     "quantidade": 12.06
+    },
+    {
+     "mes": 10,
+     "quantidade": 58.14
+    }
+   ]
+  },
+  {
+   "codigo": "1710",
+   "nome": "KILO GOLDEN GATOS F",
+   "custo": 13.35,
+   "venda": 19.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 4
+    }
+   ]
+  },
+  {
+   "codigo": "1751",
+   "nome": "KILO GOLDEN MINIBITS AD SALMAO",
+   "custo": 9.95,
+   "venda": 16.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 8.16
+    }
+   ]
+  },
+  {
+   "codigo": "1782",
+   "nome": "KILO HOT CAT",
+   "custo": 7.85,
+   "venda": 12.7,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 1
+    },
+    {
+     "mes": 6,
+     "quantidade": 11.93
+    },
+    {
+     "mes": 7,
+     "quantidade": 21.2
+    },
+    {
+     "mes": 8,
+     "quantidade": 33.13
+    },
+    {
+     "mes": 9,
+     "quantidade": 37.1
+    },
+    {
+     "mes": 10,
+     "quantidade": 33.13
+    }
+   ]
+  },
+  {
+   "codigo": "32924",
+   "nome": "KILO HOT CAT MIX",
+   "custo": 6.91,
+   "venda": 11.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 27.39
+    },
+    {
+     "mes": 4,
+     "quantidade": 13.69
+    },
+    {
+     "mes": 10,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "32928",
+   "nome": "KILO HOT DOG F",
+   "custo": 6.06,
+   "venda": 11,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "1783",
+   "nome": "KILO INICIAL",
+   "custo": 2.3,
+   "venda": 4.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 3,
+     "quantidade": 2.3
+    },
+    {
+     "mes": 4,
+     "quantidade": 2.31
+    },
+    {
+     "mes": 6,
+     "quantidade": 3
+    }
+   ]
+  },
+  {
+   "codigo": "18",
+   "nome": "KILO LAND DOG",
+   "custo": 2.46,
+   "venda": 4.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 25.55
+    },
+    {
+     "mes": 2,
+     "quantidade": 68.8
+    },
+    {
+     "mes": 3,
+     "quantidade": 62.9
+    },
+    {
+     "mes": 4,
+     "quantidade": 64.87
+    },
+    {
+     "mes": 5,
+     "quantidade": 21.39
+    },
+    {
+     "mes": 10,
+     "quantidade": 1.41
+    }
+   ]
+  },
+  {
+   "codigo": "1716",
+   "nome": "KILO MILHO",
+   "custo": 1.81,
+   "venda": 3,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 267.91
+    },
+    {
+     "mes": 2,
+     "quantidade": 216.88
+    },
+    {
+     "mes": 3,
+     "quantidade": 270.46
+    },
+    {
+     "mes": 4,
+     "quantidade": 247.5
+    },
+    {
+     "mes": 5,
+     "quantidade": 276.95
+    },
+    {
+     "mes": 6,
+     "quantidade": 252.66
+    },
+    {
+     "mes": 7,
+     "quantidade": 260.64
+    },
+    {
+     "mes": 8,
+     "quantidade": 281.92
+    },
+    {
+     "mes": 9,
+     "quantidade": 295.21
+    },
+    {
+     "mes": 10,
+     "quantidade": 284.58
+    }
+   ]
+  },
+  {
+   "codigo": "1145",
+   "nome": "KILO MILHO ALVO (PAINÇO COMUM)",
+   "custo": 6,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 14.01
+    },
+    {
+     "mes": 2,
+     "quantidade": 9.34
+    },
+    {
+     "mes": 3,
+     "quantidade": 10.89
+    },
+    {
+     "mes": 4,
+     "quantidade": 14
+    },
+    {
+     "mes": 5,
+     "quantidade": 12.91
+    },
+    {
+     "mes": 6,
+     "quantidade": 15.28
+    },
+    {
+     "mes": 7,
+     "quantidade": 14.1
+    },
+    {
+     "mes": 8,
+     "quantidade": 17.63
+    },
+    {
+     "mes": 9,
+     "quantidade": 14.1
+    },
+    {
+     "mes": 10,
+     "quantidade": 16.45
+    }
+   ]
+  },
+  {
+   "codigo": "1011",
+   "nome": "KILO MILHO ALVO PRETO",
+   "custo": 8.12,
+   "venda": 12.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.62
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.08
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.62
+    },
+    {
+     "mes": 4,
+     "quantidade": 3.78
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.97
+    },
+    {
+     "mes": 6,
+     "quantidade": 0.97
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.42
+    },
+    {
+     "mes": 8,
+     "quantidade": 2.89
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.9
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.48
+    }
+   ]
+  },
+  {
+   "codigo": "33807",
+   "nome": "KILO MILHO ALVO VERDE (PAINÇO SELECIONADO)",
+   "custo": 7.3,
+   "venda": 11.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 5.82
+    },
+    {
+     "mes": 2,
+     "quantidade": 4.56
+    },
+    {
+     "mes": 3,
+     "quantidade": 4.15
+    },
+    {
+     "mes": 4,
+     "quantidade": 5.39
+    },
+    {
+     "mes": 5,
+     "quantidade": 4.36
+    },
+    {
+     "mes": 6,
+     "quantidade": 1.93
+    },
+    {
+     "mes": 7,
+     "quantidade": 4.25
+    },
+    {
+     "mes": 8,
+     "quantidade": 5.79
+    },
+    {
+     "mes": 9,
+     "quantidade": 5.8
+    },
+    {
+     "mes": 10,
+     "quantidade": 2.32
+    }
+   ]
+  },
+  {
+   "codigo": "33812",
+   "nome": "KILO MILHO ALVO VERMELHO",
+   "custo": 9,
+   "venda": 14.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.44
+    },
+    {
+     "mes": 2,
+     "quantidade": 3.09
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.75
+    },
+    {
+     "mes": 4,
+     "quantidade": 4.8
+    },
+    {
+     "mes": 5,
+     "quantidade": 4.55
+    },
+    {
+     "mes": 6,
+     "quantidade": 2.13
+    },
+    {
+     "mes": 7,
+     "quantidade": 3.55
+    },
+    {
+     "mes": 8,
+     "quantidade": 3.54
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.83
+    },
+    {
+     "mes": 10,
+     "quantidade": 1.77
+    }
+   ]
+  },
+  {
+   "codigo": "1717",
+   "nome": "KILO MILHO HÍBRIDO",
+   "custo": 6.42,
+   "venda": 16,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.12
+    }
+   ]
+  },
+  {
+   "codigo": "1720",
+   "nome": "KILO MISTURA CÃO",
+   "custo": 3.27,
+   "venda": 5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 27.28
+    },
+    {
+     "mes": 2,
+     "quantidade": 68.21
+    },
+    {
+     "mes": 3,
+     "quantidade": 84.13
+    },
+    {
+     "mes": 4,
+     "quantidade": 79.58
+    },
+    {
+     "mes": 5,
+     "quantidade": 88.43
+    },
+    {
+     "mes": 6,
+     "quantidade": 73.36
+    },
+    {
+     "mes": 7,
+     "quantidade": 42.8
+    },
+    {
+     "mes": 8,
+     "quantidade": 4.08
+    },
+    {
+     "mes": 9,
+     "quantidade": 20.38
+    },
+    {
+     "mes": 10,
+     "quantidade": 38.73
+    }
+   ]
+  },
+  {
+   "codigo": "1721",
+   "nome": "KILO MISTURA COLEIRO ASANUTRE",
+   "custo": 7.22,
+   "venda": 12.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 58.8
+    },
+    {
+     "mes": 2,
+     "quantidade": 63.7
+    },
+    {
+     "mes": 3,
+     "quantidade": 66.64
+    },
+    {
+     "mes": 4,
+     "quantidade": 69.57
+    },
+    {
+     "mes": 5,
+     "quantidade": 71.27
+    },
+    {
+     "mes": 6,
+     "quantidade": 71.14
+    },
+    {
+     "mes": 7,
+     "quantidade": 75.04
+    },
+    {
+     "mes": 8,
+     "quantidade": 75.04
+    },
+    {
+     "mes": 9,
+     "quantidade": 75.04
+    },
+    {
+     "mes": 10,
+     "quantidade": 70.17
+    }
+   ]
+  },
+  {
+   "codigo": "1718",
+   "nome": "KILO MISTURA ECHO PIRIQUITO E CALOPSITA",
+   "custo": 5.85,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 170.77
+    },
+    {
+     "mes": 2,
+     "quantidade": 135.92
+    },
+    {
+     "mes": 3,
+     "quantidade": 175.42
+    },
+    {
+     "mes": 4,
+     "quantidade": 178.92
+    },
+    {
+     "mes": 5,
+     "quantidade": 207.74
+    },
+    {
+     "mes": 6,
+     "quantidade": 216.08
+    },
+    {
+     "mes": 7,
+     "quantidade": 198.75
+    },
+    {
+     "mes": 8,
+     "quantidade": 206.75
+    },
+    {
+     "mes": 9,
+     "quantidade": 208.09
+    },
+    {
+     "mes": 10,
+     "quantidade": 208.09
+    }
+   ]
+  },
+  {
+   "codigo": "50015",
+   "nome": "KILO MISTURA ESPECIAL CALOPSITA/AGAPORNIS ASANUTRE",
+   "custo": 0,
+   "venda": 0,
+   "ativo": false,
+   "vendas_2026": [
+    {
+     "mes": 5,
+     "quantidade": 22.2
+    }
+   ]
+  },
+  {
+   "codigo": "31210",
+   "nome": "KILO MISTURA ESPECIAL PARA PAPAGAIO ASANUTRE",
+   "custo": 8,
+   "venda": 12.8,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 46.96
+    },
+    {
+     "mes": 2,
+     "quantidade": 45.58
+    },
+    {
+     "mes": 3,
+     "quantidade": 59.38
+    },
+    {
+     "mes": 4,
+     "quantidade": 59.39
+    },
+    {
+     "mes": 5,
+     "quantidade": 66.1
+    },
+    {
+     "mes": 6,
+     "quantidade": 55.46
+    },
+    {
+     "mes": 7,
+     "quantidade": 58.63
+    },
+    {
+     "mes": 8,
+     "quantidade": 69.72
+    },
+    {
+     "mes": 9,
+     "quantidade": 53.87
+    },
+    {
+     "mes": 10,
+     "quantidade": 44.37
+    }
+   ]
+  },
+  {
+   "codigo": "1722",
+   "nome": "KILO MISTURA GATO",
+   "custo": 5,
+   "venda": 7.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 51.19
+    },
+    {
+     "mes": 2,
+     "quantidade": 21.18
+    },
+    {
+     "mes": 3,
+     "quantidade": 195.94
+    },
+    {
+     "mes": 4,
+     "quantidade": 160.63
+    },
+    {
+     "mes": 5,
+     "quantidade": 161.91
+    },
+    {
+     "mes": 6,
+     "quantidade": 63.43
+    },
+    {
+     "mes": 7,
+     "quantidade": 57.24
+    },
+    {
+     "mes": 8,
+     "quantidade": 156.26
+    },
+    {
+     "mes": 9,
+     "quantidade": 24.75
+    },
+    {
+     "mes": 10,
+     "quantidade": 100.56
+    }
+   ]
+  },
+  {
+   "codigo": "1719",
+   "nome": "KILO MISTURA PARA CANÁRIO BELGA ASANUTRE",
+   "custo": 7.56,
+   "venda": 12,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 55.6
+    },
+    {
+     "mes": 2,
+     "quantidade": 55.6
+    },
+    {
+     "mes": 3,
+     "quantidade": 62
+    },
+    {
+     "mes": 4,
+     "quantidade": 54.53
+    },
+    {
+     "mes": 5,
+     "quantidade": 66.32
+    },
+    {
+     "mes": 6,
+     "quantidade": 61.45
+    },
+    {
+     "mes": 7,
+     "quantidade": 47.19
+    },
+    {
+     "mes": 8,
+     "quantidade": 39.5
+    },
+    {
+     "mes": 9,
+     "quantidade": 51.57
+    },
+    {
+     "mes": 10,
+     "quantidade": 49.38
+    }
+   ]
+  },
+  {
+   "codigo": "1838",
+   "nome": "KILO MISTURA PARA MELRO",
+   "custo": 6.6,
+   "venda": 10.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 7.76
+    },
+    {
+     "mes": 2,
+     "quantidade": 6.72
+    },
+    {
+     "mes": 3,
+     "quantidade": 9.3
+    },
+    {
+     "mes": 4,
+     "quantidade": 6.2
+    },
+    {
+     "mes": 5,
+     "quantidade": 9.26
+    },
+    {
+     "mes": 6,
+     "quantidade": 4.11
+    },
+    {
+     "mes": 7,
+     "quantidade": 5.14
+    },
+    {
+     "mes": 8,
+     "quantidade": 6.68
+    },
+    {
+     "mes": 9,
+     "quantidade": 4.63
+    },
+    {
+     "mes": 10,
+     "quantidade": 6.17
+    }
+   ]
+  },
+  {
+   "codigo": "31225",
+   "nome": "KILO MISTURA PICHANÇÃO",
+   "custo": 3,
+   "venda": 5.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 5,
+     "quantidade": 0.5
+    }
+   ]
+  },
+  {
+   "codigo": "16973",
+   "nome": "KILO MIX DOG F",
+   "custo": 4.33,
+   "venda": 6.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 57.23
+    },
+    {
+     "mes": 7,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "158",
+   "nome": "KILO MIX DOG FRANGO E ARROZ",
+   "custo": 3.33,
+   "venda": 5.7,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 3.71
+    },
+    {
+     "mes": 3,
+     "quantidade": 9.28
+    },
+    {
+     "mes": 4,
+     "quantidade": 12.99
+    },
+    {
+     "mes": 5,
+     "quantidade": 13.13
+    }
+   ]
+  },
+  {
+   "codigo": "32653",
+   "nome": "KILO NATIVO BIO TRON",
+   "custo": 12.94,
+   "venda": 21.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 0.65
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.3
+    },
+    {
+     "mes": 6,
+     "quantidade": 0.95
+    },
+    {
+     "mes": 7,
+     "quantidade": 0.95
+    },
+    {
+     "mes": 9,
+     "quantidade": 6.62
+    }
+   ]
+  },
+  {
+   "codigo": "32552",
+   "nome": "KILO NATURALIS F",
+   "custo": 12.54,
+   "venda": 19.9,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "33034",
+   "nome": "KILO NUTROPICA TRINCA FERRO NATURAL",
+   "custo": 52.51,
+   "venda": 78,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 4,
+     "quantidade": 2.5
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.24
+    },
+    {
+     "mes": 6,
+     "quantidade": 0.75
+    },
+    {
+     "mes": 7,
+     "quantidade": 0.73
+    },
+    {
+     "mes": 8,
+     "quantidade": 0.49
+    },
+    {
+     "mes": 9,
+     "quantidade": 0.49
+    },
+    {
+     "mes": 10,
+     "quantidade": 0.24
+    }
+   ]
+  },
+  {
+   "codigo": "9945",
+   "nome": "KILO PAINÇO MILHETE",
+   "custo": 2.58,
+   "venda": 5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "32643",
+   "nome": "KILO PAPA DOG AD (21% PRO)",
+   "custo": 4.89,
+   "venda": 8.2,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 15.08
+    },
+    {
+     "mes": 2,
+     "quantidade": 34.27
+    },
+    {
+     "mes": 3,
+     "quantidade": 4.11
+    },
+    {
+     "mes": 4,
+     "quantidade": 20.56
+    },
+    {
+     "mes": 5,
+     "quantidade": 11.69
+    },
+    {
+     "mes": 6,
+     "quantidade": 10.44
+    },
+    {
+     "mes": 7,
+     "quantidade": 7.45
+    },
+    {
+     "mes": 8,
+     "quantidade": 20.87
+    },
+    {
+     "mes": 9,
+     "quantidade": 11.93
+    },
+    {
+     "mes": 10,
+     "quantidade": 17.89
+    }
+   ]
+  },
+  {
+   "codigo": "12121",
+   "nome": "KILO PAPA FILHOTE GOLD REINO DAS AVES",
+   "custo": 31,
+   "venda": 51,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.3
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.38
+    }
+   ]
+  },
+  {
+   "codigo": "0222222222222",
+   "nome": "KILO PEDDY AD",
+   "custo": 2.5,
+   "venda": 4.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 2
+    }
+   ]
+  },
+  {
+   "codigo": "6613",
+   "nome": "KILO PEDIGREE ESSENCIAL",
+   "custo": 5.89,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.01
+    }
+   ]
+  },
+  {
+   "codigo": "1726",
+   "nome": "KILO PEDIGREE JÚNIOR",
+   "custo": 9.15,
+   "venda": 15.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 4.75
+    },
+    {
+     "mes": 3,
+     "quantidade": 17.83
+    },
+    {
+     "mes": 4,
+     "quantidade": 24.96
+    },
+    {
+     "mes": 5,
+     "quantidade": 20.96
+    },
+    {
+     "mes": 6,
+     "quantidade": 4.57
+    },
+    {
+     "mes": 7,
+     "quantidade": 8.01
+    },
+    {
+     "mes": 8,
+     "quantidade": 1.14
+    },
+    {
+     "mes": 10,
+     "quantidade": 4.57
+    }
+   ]
+  },
+  {
+   "codigo": "1725",
+   "nome": "KILO PEDIGREE RP",
+   "custo": 8.75,
+   "venda": 15.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 10.2
+    },
+    {
+     "mes": 3,
+     "quantidade": 28.35
+    },
+    {
+     "mes": 4,
+     "quantidade": 27.21
+    },
+    {
+     "mes": 5,
+     "quantidade": 28.94
+    },
+    {
+     "mes": 6,
+     "quantidade": 11.11
+    },
+    {
+     "mes": 7,
+     "quantidade": 6.67
+    },
+    {
+     "mes": 10,
+     "quantidade": 34.45
+    }
+   ]
+  },
+  {
+   "codigo": "17551",
+   "nome": "KILO PEDIGREE VEGETAIS",
+   "custo": 8.93,
+   "venda": 12.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 3,
+     "quantidade": 11.84
+    },
+    {
+     "mes": 4,
+     "quantidade": 9.87
+    },
+    {
+     "mes": 5,
+     "quantidade": 23.05
+    },
+    {
+     "mes": 7,
+     "quantidade": 15.88
+    }
+   ]
+  },
+  {
+   "codigo": "17004",
+   "nome": "KILO PEIXE ALEVINO 1MM",
+   "custo": 9.72,
+   "venda": 19,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 9.86
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.97
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.31
+    },
+    {
+     "mes": 5,
+     "quantidade": 3.06
+    },
+    {
+     "mes": 6,
+     "quantidade": 1.91
+    },
+    {
+     "mes": 7,
+     "quantidade": 4.97
+    },
+    {
+     "mes": 8,
+     "quantidade": 2.68
+    },
+    {
+     "mes": 9,
+     "quantidade": 6.13
+    },
+    {
+     "mes": 10,
+     "quantidade": 4.97
+    }
+   ]
+  },
+  {
+   "codigo": "1756",
+   "nome": "KILO PEIXE CRESCIMENTO 32% 4MM",
+   "custo": 3.26,
+   "venda": 6.3,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 29.85
+    },
+    {
+     "mes": 2,
+     "quantidade": 15.71
+    },
+    {
+     "mes": 3,
+     "quantidade": 22
+    },
+    {
+     "mes": 4,
+     "quantidade": 40.86
+    },
+    {
+     "mes": 5,
+     "quantidade": 40.85
+    },
+    {
+     "mes": 6,
+     "quantidade": 25.39
+    },
+    {
+     "mes": 7,
+     "quantidade": 23.7
+    },
+    {
+     "mes": 8,
+     "quantidade": 25.39
+    },
+    {
+     "mes": 9,
+     "quantidade": 16.93
+    },
+    {
+     "mes": 10,
+     "quantidade": 8.46
+    }
+   ]
+  },
+  {
+   "codigo": "17195",
+   "nome": "KILO PEIXE ENGORDA 25% 6 A 8MM",
+   "custo": 2.92,
+   "venda": 5.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 35.39
+    },
+    {
+     "mes": 2,
+     "quantidade": 23.6
+    },
+    {
+     "mes": 3,
+     "quantidade": 41.29
+    },
+    {
+     "mes": 4,
+     "quantidade": 11.8
+    },
+    {
+     "mes": 6,
+     "quantidade": 7.9
+    },
+    {
+     "mes": 7,
+     "quantidade": 29.63
+    },
+    {
+     "mes": 8,
+     "quantidade": 25.68
+    },
+    {
+     "mes": 9,
+     "quantidade": 23.71
+    },
+    {
+     "mes": 10,
+     "quantidade": 37.55
+    }
+   ]
+  },
+  {
+   "codigo": "1727",
+   "nome": "KILO PEIXE ENGORDA 28% 9 A 11MM",
+   "custo": 2.78,
+   "venda": 5.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 6.75
+    },
+    {
+     "mes": 2,
+     "quantidade": 18.01
+    },
+    {
+     "mes": 3,
+     "quantidade": 11.26
+    },
+    {
+     "mes": 4,
+     "quantidade": 38.26
+    },
+    {
+     "mes": 5,
+     "quantidade": 33.86
+    },
+    {
+     "mes": 6,
+     "quantidade": 34.2
+    },
+    {
+     "mes": 7,
+     "quantidade": 6.03
+    },
+    {
+     "mes": 8,
+     "quantidade": 12.07
+    },
+    {
+     "mes": 9,
+     "quantidade": 4.02
+    },
+    {
+     "mes": 10,
+     "quantidade": 10.06
+    }
+   ]
+  },
+  {
+   "codigo": "31387",
+   "nome": "KILO PEIXE JUVENIL 36% 3MM",
+   "custo": 5.1,
+   "venda": 8.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 18.34
+    },
+    {
+     "mes": 2,
+     "quantidade": 19.56
+    },
+    {
+     "mes": 3,
+     "quantidade": 29.34
+    },
+    {
+     "mes": 4,
+     "quantidade": 24.45
+    },
+    {
+     "mes": 5,
+     "quantidade": 16.19
+    },
+    {
+     "mes": 6,
+     "quantidade": 15.47
+    },
+    {
+     "mes": 7,
+     "quantidade": 24.06
+    },
+    {
+     "mes": 8,
+     "quantidade": 5.16
+    },
+    {
+     "mes": 9,
+     "quantidade": 15.47
+    },
+    {
+     "mes": 10,
+     "quantidade": 12.03
+    }
+   ]
+  },
+  {
+   "codigo": "1728",
+   "nome": "KILO PICADO",
+   "custo": 2.88,
+   "venda": 4.8,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 162.54
+    },
+    {
+     "mes": 2,
+     "quantidade": 84.07
+    },
+    {
+     "mes": 3,
+     "quantidade": 97.14
+    },
+    {
+     "mes": 4,
+     "quantidade": 76.59
+    },
+    {
+     "mes": 5,
+     "quantidade": 75.39
+    },
+    {
+     "mes": 6,
+     "quantidade": 87.25
+    },
+    {
+     "mes": 7,
+     "quantidade": 59.33
+    },
+    {
+     "mes": 8,
+     "quantidade": 92.49
+    },
+    {
+     "mes": 9,
+     "quantidade": 90.74
+    },
+    {
+     "mes": 10,
+     "quantidade": 104.7
+    }
+   ]
+  },
+  {
+   "codigo": "1734",
+   "nome": "KILO POSTURA",
+   "custo": 2.05,
+   "venda": 3.6,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 77.02
+    },
+    {
+     "mes": 2,
+     "quantidade": 70.78
+    },
+    {
+     "mes": 3,
+     "quantidade": 70.78
+    },
+    {
+     "mes": 4,
+     "quantidade": 104.07
+    },
+    {
+     "mes": 5,
+     "quantidade": 90.82
+    },
+    {
+     "mes": 6,
+     "quantidade": 66.15
+    },
+    {
+     "mes": 7,
+     "quantidade": 85.34
+    },
+    {
+     "mes": 8,
+     "quantidade": 76.82
+    },
+    {
+     "mes": 9,
+     "quantidade": 59.75
+    },
+    {
+     "mes": 10,
+     "quantidade": 76.82
+    }
+   ]
+  },
+  {
+   "codigo": "32326",
+   "nome": "KILO PRONATURAL PREFRAN GUABI",
+   "custo": 4.35,
+   "venda": 7.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 36.31
+    },
+    {
+     "mes": 2,
+     "quantidade": 22.87
+    },
+    {
+     "mes": 3,
+     "quantidade": 32.29
+    },
+    {
+     "mes": 4,
+     "quantidade": 22.87
+    },
+    {
+     "mes": 5,
+     "quantidade": 34.83
+    },
+    {
+     "mes": 6,
+     "quantidade": 30.33
+    },
+    {
+     "mes": 7,
+     "quantidade": 42.82
+    },
+    {
+     "mes": 8,
+     "quantidade": 51.73
+    },
+    {
+     "mes": 9,
+     "quantidade": 42.82
+    },
+    {
+     "mes": 10,
+     "quantidade": 39.25
+    }
+   ]
+  },
+  {
+   "codigo": "17396",
+   "nome": "KILO QUARTZ F RMG",
+   "custo": 6.4,
+   "venda": 11,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 9.06
+    },
+    {
+     "mes": 2,
+     "quantidade": 7.94
+    },
+    {
+     "mes": 3,
+     "quantidade": 5.67
+    },
+    {
+     "mes": 4,
+     "quantidade": 2.27
+    },
+    {
+     "mes": 5,
+     "quantidade": 2.5
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.5
+    }
+   ]
+  },
+  {
+   "codigo": "05230154897988",
+   "nome": "KILO QUARTZ F RP",
+   "custo": 8,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 1.91
+    },
+    {
+     "mes": 3,
+     "quantidade": 7.63
+    },
+    {
+     "mes": 9,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "98833",
+   "nome": "KILO QUARTZ GATO AD FRANGO",
+   "custo": 8,
+   "venda": 14.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 6,
+     "quantidade": 20.68
+    },
+    {
+     "mes": 7,
+     "quantidade": 19.69
+    },
+    {
+     "mes": 8,
+     "quantidade": 22.65
+    },
+    {
+     "mes": 9,
+     "quantidade": 9.85
+    }
+   ]
+  },
+  {
+   "codigo": "17452",
+   "nome": "KILO QUARTZ GATOS AD SALMAO",
+   "custo": 7.15,
+   "venda": 14.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 4,
+     "quantidade": 0.11
+    },
+    {
+     "mes": 5,
+     "quantidade": 4.95
+    },
+    {
+     "mes": 6,
+     "quantidade": 2.97
+    }
+   ]
+  },
+  {
+   "codigo": "17459",
+   "nome": "KILO QUARTZ GATOS CASTR FRANGO",
+   "custo": 7.3,
+   "venda": 16,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.94
+    },
+    {
+     "mes": 3,
+     "quantidade": 11.22
+    },
+    {
+     "mes": 4,
+     "quantidade": 0.94
+    },
+    {
+     "mes": 6,
+     "quantidade": 15.09
+    },
+    {
+     "mes": 7,
+     "quantidade": 3.77
+    },
+    {
+     "mes": 8,
+     "quantidade": 0.94
+    },
+    {
+     "mes": 9,
+     "quantidade": 20.75
+    },
+    {
+     "mes": 10,
+     "quantidade": 16.97
+    }
+   ]
+  },
+  {
+   "codigo": "17453",
+   "nome": "KILO QUARTZ GATOS CASTR SALMAO",
+   "custo": 7.3,
+   "venda": 16,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 7.1
+    },
+    {
+     "mes": 2,
+     "quantidade": 15.21
+    },
+    {
+     "mes": 3,
+     "quantidade": 16.21
+    },
+    {
+     "mes": 4,
+     "quantidade": 13.18
+    },
+    {
+     "mes": 5,
+     "quantidade": 20.03
+    },
+    {
+     "mes": 6,
+     "quantidade": 25.58
+    },
+    {
+     "mes": 7,
+     "quantidade": 53.06
+    },
+    {
+     "mes": 8,
+     "quantidade": 61.59
+    },
+    {
+     "mes": 9,
+     "quantidade": 57.8
+    },
+    {
+     "mes": 10,
+     "quantidade": 17.05
+    }
+   ]
+  },
+  {
+   "codigo": "17418",
+   "nome": "KILO QUARTZ GATOS F",
+   "custo": 7.8,
+   "venda": 13.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 25.06
+    },
+    {
+     "mes": 2,
+     "quantidade": 20.59
+    },
+    {
+     "mes": 3,
+     "quantidade": 26.86
+    },
+    {
+     "mes": 4,
+     "quantidade": 21.48
+    },
+    {
+     "mes": 5,
+     "quantidade": 23.21
+    },
+    {
+     "mes": 6,
+     "quantidade": 23.79
+    },
+    {
+     "mes": 7,
+     "quantidade": 29.74
+    },
+    {
+     "mes": 8,
+     "quantidade": 19.83
+    },
+    {
+     "mes": 9,
+     "quantidade": 34.7
+    },
+    {
+     "mes": 10,
+     "quantidade": 29.74
+    }
+   ]
+  },
+  {
+   "codigo": "97712",
+   "nome": "KILO QUARTZ HARD TRAINING",
+   "custo": 6.7,
+   "venda": 13,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 8,
+     "quantidade": 13.57
+    },
+    {
+     "mes": 9,
+     "quantidade": 28.84
+    },
+    {
+     "mes": 10,
+     "quantidade": 28.83
+    }
+   ]
+  },
+  {
+   "codigo": "17400",
+   "nome": "KILO QUARTZ RP",
+   "custo": 6.03,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.82
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.28
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.28
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.35
+    },
+    {
+     "mes": 8,
+     "quantidade": 2.71
+    }
+   ]
+  },
+  {
+   "codigo": "32587",
+   "nome": "KILO QUARTZ SENIOR RP",
+   "custo": 0,
+   "venda": 12.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 10.86
+    },
+    {
+     "mes": 2,
+     "quantidade": 4.06
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.71
+    },
+    {
+     "mes": 4,
+     "quantidade": 6.77
+    },
+    {
+     "mes": 5,
+     "quantidade": 14.51
+    },
+    {
+     "mes": 6,
+     "quantidade": 22.38
+    },
+    {
+     "mes": 7,
+     "quantidade": 25.37
+    },
+    {
+     "mes": 8,
+     "quantidade": 26.85
+    },
+    {
+     "mes": 9,
+     "quantidade": 17.91
+    },
+    {
+     "mes": 10,
+     "quantidade": 13.43
+    }
+   ]
+  },
+  {
+   "codigo": "17394",
+   "nome": "KILO QUARTZ SUPREME AD (24% PRO)",
+   "custo": 6.15,
+   "venda": 11,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 42.25
+    },
+    {
+     "mes": 2,
+     "quantidade": 34.2
+    },
+    {
+     "mes": 3,
+     "quantidade": 20.12
+    },
+    {
+     "mes": 4,
+     "quantidade": 36.21
+    },
+    {
+     "mes": 5,
+     "quantidade": 40.82
+    },
+    {
+     "mes": 6,
+     "quantidade": 53.48
+    },
+    {
+     "mes": 7,
+     "quantidade": 51.43
+    },
+    {
+     "mes": 8,
+     "quantidade": 43.2
+    },
+    {
+     "mes": 9,
+     "quantidade": 51.43
+    },
+    {
+     "mes": 10,
+     "quantidade": 30.86
+    }
+   ]
+  },
+  {
+   "codigo": "60607",
+   "nome": "KILO QUATREE CAO SELECT AD 23%",
+   "custo": 8,
+   "venda": 11.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "33162",
+   "nome": "KILO QUATREE GATOS CASTR MIX DE CARNES",
+   "custo": 12.47,
+   "venda": 19.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 12.84
+    },
+    {
+     "mes": 2,
+     "quantidade": 10.27
+    },
+    {
+     "mes": 3,
+     "quantidade": 17.98
+    },
+    {
+     "mes": 4,
+     "quantidade": 25.67
+    },
+    {
+     "mes": 5,
+     "quantidade": 17.98
+    },
+    {
+     "mes": 6,
+     "quantidade": 13.73
+    },
+    {
+     "mes": 7,
+     "quantidade": 54.91
+    },
+    {
+     "mes": 8,
+     "quantidade": 59.01
+    },
+    {
+     "mes": 9,
+     "quantidade": 38.44
+    },
+    {
+     "mes": 10,
+     "quantidade": 43.93
+    }
+   ]
+  },
+  {
+   "codigo": "32995",
+   "nome": "KILO QUATREE GOURMET AD (22% PRO)",
+   "custo": 6.68,
+   "venda": 10.8,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 6,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "02022820008875",
+   "nome": "KILO QUATREE LIFE AD RMG",
+   "custo": 10.99,
+   "venda": 12.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 1.54
+    },
+    {
+     "mes": 3,
+     "quantidade": 6.13
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.54
+    }
+   ]
+  },
+  {
+   "codigo": "17328",
+   "nome": "KILO QUATREE SELECT AD FRANGO E ARROZ",
+   "custo": 6.5,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.24
+    },
+    {
+     "mes": 2,
+     "quantidade": 6.48
+    }
+   ]
+  },
+  {
+   "codigo": "1108",
+   "nome": "KILO RAÇÃO PARA TRINCA-FERRO (DIA A DIA) ASANUTRE",
+   "custo": 7.66,
+   "venda": 12,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 11.68
+    },
+    {
+     "mes": 2,
+     "quantidade": 15.58
+    },
+    {
+     "mes": 3,
+     "quantidade": 16.55
+    },
+    {
+     "mes": 4,
+     "quantidade": 12.66
+    },
+    {
+     "mes": 5,
+     "quantidade": 22.16
+    },
+    {
+     "mes": 6,
+     "quantidade": 17.55
+    },
+    {
+     "mes": 7,
+     "quantidade": 17.55
+    },
+    {
+     "mes": 8,
+     "quantidade": 4.39
+    },
+    {
+     "mes": 9,
+     "quantidade": 20.83
+    },
+    {
+     "mes": 10,
+     "quantidade": 10.97
+    }
+   ]
+  },
+  {
+   "codigo": "17034",
+   "nome": "KILO SELLECTA EXTRUSADO PAPAGAIO NATURAL",
+   "custo": 26.55,
+   "venda": 41,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "17351",
+   "nome": "KILO SELLECTA EXTRUSADO SR-240",
+   "custo": 59.47,
+   "venda": 93.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.1
+    },
+    {
+     "mes": 2,
+     "quantidade": 0.29
+    },
+    {
+     "mes": 3,
+     "quantidade": 0.19
+    }
+   ]
+  },
+  {
+   "codigo": "1026",
+   "nome": "KILO SEMENTE DE QUIABO",
+   "custo": 57.47,
+   "venda": 98,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 3,
+     "quantidade": 0.13
+    },
+    {
+     "mes": 4,
+     "quantidade": 0.21
+    }
+   ]
+  },
+  {
+   "codigo": "32507",
+   "nome": "KILO SENHA",
+   "custo": 5.25,
+   "venda": 8.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.26
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.06
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.06
+    },
+    {
+     "mes": 4,
+     "quantidade": 2.95
+    },
+    {
+     "mes": 5,
+     "quantidade": 5.23
+    },
+    {
+     "mes": 6,
+     "quantidade": 6.28
+    },
+    {
+     "mes": 7,
+     "quantidade": 4.83
+    },
+    {
+     "mes": 8,
+     "quantidade": 4.35
+    },
+    {
+     "mes": 9,
+     "quantidade": 3.87
+    },
+    {
+     "mes": 10,
+     "quantidade": 3.38
+    }
+   ]
+  },
+  {
+   "codigo": "5500048",
+   "nome": "KILO SPECIAL CAT CARNE AD",
+   "custo": 9,
+   "venda": 13.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 3,
+     "quantidade": 14.35
+    },
+    {
+     "mes": 4,
+     "quantidade": 5.13
+    }
+   ]
+  },
+  {
+   "codigo": "16824",
+   "nome": "KILO SPECIAL CAT FILHOTE",
+   "custo": 10.43,
+   "venda": 17,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 11.39
+    },
+    {
+     "mes": 2,
+     "quantidade": 22.77
+    },
+    {
+     "mes": 3,
+     "quantidade": 16.13
+    },
+    {
+     "mes": 4,
+     "quantidade": 23.72
+    },
+    {
+     "mes": 5,
+     "quantidade": 11.78
+    },
+    {
+     "mes": 6,
+     "quantidade": 1.76
+    },
+    {
+     "mes": 7,
+     "quantidade": 7.03
+    }
+   ]
+  },
+  {
+   "codigo": "70001",
+   "nome": "KILO SPECIAL CAT GATOS CASTR FRANGO",
+   "custo": 9.46,
+   "venda": 16.5,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "16927",
+   "nome": "KILO SPECIAL CAT GATOS CASTR SALMÃO",
+   "custo": 9.46,
+   "venda": 16.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 37.59
+    },
+    {
+     "mes": 2,
+     "quantidade": 39.94
+    },
+    {
+     "mes": 3,
+     "quantidade": 18.8
+    },
+    {
+     "mes": 4,
+     "quantidade": 38.77
+    },
+    {
+     "mes": 5,
+     "quantidade": 22.91
+    },
+    {
+     "mes": 6,
+     "quantidade": 27.01
+    },
+    {
+     "mes": 7,
+     "quantidade": 12.55
+    },
+    {
+     "mes": 8,
+     "quantidade": 9.65
+    },
+    {
+     "mes": 9,
+     "quantidade": 4.83
+    }
+   ]
+  },
+  {
+   "codigo": "33376",
+   "nome": "KILO SPECIAL CAT MIX",
+   "custo": 8.84,
+   "venda": 14.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 30.43
+    },
+    {
+     "mes": 2,
+     "quantidade": 39.27
+    },
+    {
+     "mes": 3,
+     "quantidade": 29.45
+    },
+    {
+     "mes": 4,
+     "quantidade": 28.47
+    },
+    {
+     "mes": 5,
+     "quantidade": 53.56
+    },
+    {
+     "mes": 6,
+     "quantidade": 12.34
+    },
+    {
+     "mes": 7,
+     "quantidade": 4.49
+    },
+    {
+     "mes": 10,
+     "quantidade": 10.09
+    }
+   ]
+  },
+  {
+   "codigo": "50008",
+   "nome": "KILO SPECIAL CAT PEIXE",
+   "custo": 8.76,
+   "venda": 14.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.92
+    },
+    {
+     "mes": 4,
+     "quantidade": 10.07
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.4
+    }
+   ]
+  },
+  {
+   "codigo": "60217",
+   "nome": "KILO SPECIAL CAT PRIME FRANGO",
+   "custo": 0,
+   "venda": 17.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 0.73
+    },
+    {
+     "mes": 2,
+     "quantidade": 5.81
+    },
+    {
+     "mes": 3,
+     "quantidade": 5.09
+    },
+    {
+     "mes": 5,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "51423",
+   "nome": "KILO SPECIAL CAT PRIME SALMAO",
+   "custo": 0,
+   "venda": 18.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 4,
+     "quantidade": 2.53
+    },
+    {
+     "mes": 5,
+     "quantidade": 2.2
+    }
+   ]
+  },
+  {
+   "codigo": "68511",
+   "nome": "KILO SPECIAL CAT ULTRALIFE CASTR SALMAO",
+   "custo": 0,
+   "venda": 18.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 10.26
+    },
+    {
+     "mes": 2,
+     "quantidade": 15.85
+    },
+    {
+     "mes": 3,
+     "quantidade": 2.8
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.87
+    },
+    {
+     "mes": 5,
+     "quantidade": 2.59
+    },
+    {
+     "mes": 6,
+     "quantidade": 4.32
+    }
+   ]
+  },
+  {
+   "codigo": "1780",
+   "nome": "KILO SPECIAL DOG AD (21% PRO)",
+   "custo": 5.43,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 25.13
+    },
+    {
+     "mes": 2,
+     "quantidade": 44.46
+    },
+    {
+     "mes": 3,
+     "quantidade": 46.39
+    },
+    {
+     "mes": 4,
+     "quantidade": 30.93
+    },
+    {
+     "mes": 5,
+     "quantidade": 13.22
+    },
+    {
+     "mes": 6,
+     "quantidade": 11.33
+    },
+    {
+     "mes": 7,
+     "quantidade": 17
+    },
+    {
+     "mes": 8,
+     "quantidade": 7.55
+    },
+    {
+     "mes": 9,
+     "quantidade": 18.89
+    },
+    {
+     "mes": 10,
+     "quantidade": 47.22
+    }
+   ]
+  },
+  {
+   "codigo": "60608",
+   "nome": "KILO SPECIAL DOG AD GOLD LIFE 22%",
+   "custo": 8.5,
+   "venda": 8.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.1
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.09
+    }
+   ]
+  },
+  {
+   "codigo": "32292",
+   "nome": "KILO SPECIAL DOG AD RP",
+   "custo": 8.13,
+   "venda": 13.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 102.89
+    },
+    {
+     "mes": 2,
+     "quantidade": 105.4
+    },
+    {
+     "mes": 3,
+     "quantidade": 131.76
+    },
+    {
+     "mes": 4,
+     "quantidade": 58.98
+    },
+    {
+     "mes": 5,
+     "quantidade": 28.59
+    },
+    {
+     "mes": 6,
+     "quantidade": 53.1
+    },
+    {
+     "mes": 7,
+     "quantidade": 39.48
+    },
+    {
+     "mes": 8,
+     "quantidade": 23.14
+    },
+    {
+     "mes": 10,
+     "quantidade": 28.59
+    }
+   ]
+  },
+  {
+   "codigo": "5191",
+   "nome": "KILO SPECIAL DOG F",
+   "custo": 8.13,
+   "venda": 13.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 27.43
+    },
+    {
+     "mes": 2,
+     "quantidade": 49.08
+    },
+    {
+     "mes": 3,
+     "quantidade": 47.63
+    },
+    {
+     "mes": 4,
+     "quantidade": 47.63
+    },
+    {
+     "mes": 5,
+     "quantidade": 22.09
+    },
+    {
+     "mes": 6,
+     "quantidade": 14.78
+    },
+    {
+     "mes": 7,
+     "quantidade": 29.55
+    },
+    {
+     "mes": 8,
+     "quantidade": 16.12
+    },
+    {
+     "mes": 10,
+     "quantidade": 20.15
+    }
+   ]
+  },
+  {
+   "codigo": "5120",
+   "nome": "KILO SPECIAL DOG GOLD AD (23% PRO)",
+   "custo": 7.54,
+   "venda": 12.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.38
+    },
+    {
+     "mes": 2,
+     "quantidade": 4.14
+    },
+    {
+     "mes": 3,
+     "quantidade": 6.88
+    },
+    {
+     "mes": 4,
+     "quantidade": 4.14
+    }
+   ]
+  },
+  {
+   "codigo": "17359",
+   "nome": "KILO SPECIAL DOG PLUS",
+   "custo": 5.8,
+   "venda": 9.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 4.73
+    },
+    {
+     "mes": 2,
+     "quantidade": 2.37
+    },
+    {
+     "mes": 4,
+     "quantidade": 2.37
+    },
+    {
+     "mes": 10,
+     "quantidade": 14.3
+    }
+   ]
+  },
+  {
+   "codigo": "25252",
+   "nome": "KILO SPECIAL DOG SENIOR RP",
+   "custo": 8.63,
+   "venda": 14.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 10.86
+    },
+    {
+     "mes": 2,
+     "quantidade": 10.86
+    },
+    {
+     "mes": 3,
+     "quantidade": 26.38
+    },
+    {
+     "mes": 4,
+     "quantidade": 27.93
+    },
+    {
+     "mes": 5,
+     "quantidade": 10.5
+    },
+    {
+     "mes": 6,
+     "quantidade": 7.01
+    },
+    {
+     "mes": 7,
+     "quantidade": 10.5
+    },
+    {
+     "mes": 8,
+     "quantidade": 3.51
+    },
+    {
+     "mes": 9,
+     "quantidade": 9.35
+    },
+    {
+     "mes": 10,
+     "quantidade": 3.51
+    }
+   ]
+  },
+  {
+   "codigo": "17021",
+   "nome": "KILO TORNEIO DE FRUTAS",
+   "custo": 11.03,
+   "venda": 16,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "5850",
+   "nome": "KILO TORO AD (18% PRO)",
+   "custo": 3.59,
+   "venda": 6,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 97.43
+    },
+    {
+     "mes": 2,
+     "quantidade": 72.56
+    },
+    {
+     "mes": 3,
+     "quantidade": 60.12
+    },
+    {
+     "mes": 4,
+     "quantidade": 68.41
+    },
+    {
+     "mes": 5,
+     "quantidade": 81
+    },
+    {
+     "mes": 6,
+     "quantidade": 69.43
+    },
+    {
+     "mes": 7,
+     "quantidade": 99.8
+    },
+    {
+     "mes": 8,
+     "quantidade": 97.63
+    },
+    {
+     "mes": 9,
+     "quantidade": 86.78
+    },
+    {
+     "mes": 10,
+     "quantidade": 82.44
+    }
+   ]
+  },
+  {
+   "codigo": "16937",
+   "nome": "KILO TRINCA FRUTA P/ PÁSSAROS",
+   "custo": 7.5,
+   "venda": 13,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "1143",
+   "nome": "KILO TRINCA MEGA TURBO COM INSETOS",
+   "custo": 12.8,
+   "venda": 19.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 2,
+     "quantidade": 1
+    },
+    {
+     "mes": 5,
+     "quantidade": 0.84
+    },
+    {
+     "mes": 9,
+     "quantidade": 0.84
+    }
+   ]
+  },
+  {
+   "codigo": "1010",
+   "nome": "KILO TRINCA TENEBRIO C/ FRUTAS",
+   "custo": 18.92,
+   "venda": 30.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 2.18
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.2
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.92
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.92
+    },
+    {
+     "mes": 5,
+     "quantidade": 1.07
+    }
+   ]
+  },
+  {
+   "codigo": "31650",
+   "nome": "KILO TRINCA TORNEIO BANANA",
+   "custo": 11.26,
+   "venda": 17.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 5.18
+    },
+    {
+     "mes": 2,
+     "quantidade": 5.18
+    },
+    {
+     "mes": 3,
+     "quantidade": 6.06
+    },
+    {
+     "mes": 4,
+     "quantidade": 5.61
+    },
+    {
+     "mes": 5,
+     "quantidade": 3.63
+    },
+    {
+     "mes": 6,
+     "quantidade": 3.8
+    },
+    {
+     "mes": 7,
+     "quantidade": 4.85
+    },
+    {
+     "mes": 8,
+     "quantidade": 3.46
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.07
+    },
+    {
+     "mes": 10,
+     "quantidade": 3.8
+    }
+   ]
+  },
+  {
+   "codigo": "1017",
+   "nome": "KILO TRINCA TORNEIO MAÇÃ VERDE",
+   "custo": 11.28,
+   "venda": 17.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 3.48
+    },
+    {
+     "mes": 2,
+     "quantidade": 3.87
+    },
+    {
+     "mes": 3,
+     "quantidade": 5.03
+    },
+    {
+     "mes": 4,
+     "quantidade": 3.87
+    },
+    {
+     "mes": 5,
+     "quantidade": 5.39
+    },
+    {
+     "mes": 6,
+     "quantidade": 4.23
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.96
+    },
+    {
+     "mes": 8,
+     "quantidade": 4.65
+    },
+    {
+     "mes": 9,
+     "quantidade": 5.07
+    },
+    {
+     "mes": 10,
+     "quantidade": 4.23
+    }
+   ]
+  },
+  {
+   "codigo": "31408",
+   "nome": "KILO TRITURADA DE LARANJA",
+   "custo": 11.26,
+   "venda": 17.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 1.89
+    },
+    {
+     "mes": 2,
+     "quantidade": 1.57
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.89
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.89
+    },
+    {
+     "mes": 5,
+     "quantidade": 2.82
+    },
+    {
+     "mes": 6,
+     "quantidade": 1.37
+    },
+    {
+     "mes": 7,
+     "quantidade": 2.19
+    },
+    {
+     "mes": 8,
+     "quantidade": 1.64
+    },
+    {
+     "mes": 9,
+     "quantidade": 2.73
+    },
+    {
+     "mes": 10,
+     "quantidade": 4.37
+    }
+   ]
+  },
+  {
+   "codigo": "1018",
+   "nome": "KILO TRITURADA MAMÃO ESPECIAL",
+   "custo": 5.72,
+   "venda": 9.7,
+   "ativo": true,
+   "vendas_2026": []
+  },
+  {
+   "codigo": "1743",
+   "nome": "KILO WHISKAS CARNE",
+   "custo": 12.95,
+   "venda": 21,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 23.93
+    },
+    {
+     "mes": 2,
+     "quantidade": 4.79
+    },
+    {
+     "mes": 3,
+     "quantidade": 9.58
+    },
+    {
+     "mes": 4,
+     "quantidade": 16.76
+    },
+    {
+     "mes": 5,
+     "quantidade": 14.93
+    },
+    {
+     "mes": 6,
+     "quantidade": 12.52
+    },
+    {
+     "mes": 7,
+     "quantidade": 11.62
+    },
+    {
+     "mes": 8,
+     "quantidade": 16.99
+    },
+    {
+     "mes": 9,
+     "quantidade": 13.41
+    },
+    {
+     "mes": 10,
+     "quantidade": 18.77
+    }
+   ]
+  },
+  {
+   "codigo": "50002",
+   "nome": "KILO WHISKAS PEIXE",
+   "custo": 12.95,
+   "venda": 21,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 9.14
+    },
+    {
+     "mes": 2,
+     "quantidade": 14.85
+    },
+    {
+     "mes": 3,
+     "quantidade": 15.99
+    },
+    {
+     "mes": 4,
+     "quantidade": 17.13
+    },
+    {
+     "mes": 5,
+     "quantidade": 18.91
+    },
+    {
+     "mes": 6,
+     "quantidade": 10.92
+    },
+    {
+     "mes": 7,
+     "quantidade": 14.9
+    },
+    {
+     "mes": 8,
+     "quantidade": 17.87
+    },
+    {
+     "mes": 9,
+     "quantidade": 12.91
+    },
+    {
+     "mes": 10,
+     "quantidade": 15.89
+    }
+   ]
+  },
+  {
+   "codigo": "48751",
+   "nome": "KILO ZORRO AD RP",
+   "custo": 4.6,
+   "venda": 8.9,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 36.72
+    },
+    {
+     "mes": 2,
+     "quantidade": 43.4
+    },
+    {
+     "mes": 3,
+     "quantidade": 48.4
+    },
+    {
+     "mes": 4,
+     "quantidade": 65.09
+    },
+    {
+     "mes": 5,
+     "quantidade": 61.75
+    },
+    {
+     "mes": 6,
+     "quantidade": 111.45
+    },
+    {
+     "mes": 7,
+     "quantidade": 43.61
+    },
+    {
+     "mes": 8,
+     "quantidade": 129.23
+    },
+    {
+     "mes": 9,
+     "quantidade": 98.53
+    },
+    {
+     "mes": 10,
+     "quantidade": 111.45
+    }
+   ]
+  },
+  {
+   "codigo": "88065",
+   "nome": "KILO ZORRO CAT",
+   "custo": 5.3,
+   "venda": 9.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 166.76
+    },
+    {
+     "mes": 2,
+     "quantidade": 214.41
+    },
+    {
+     "mes": 3,
+     "quantidade": 144.34
+    },
+    {
+     "mes": 4,
+     "quantidade": 107.91
+    },
+    {
+     "mes": 5,
+     "quantidade": 160.53
+    },
+    {
+     "mes": 6,
+     "quantidade": 126.62
+    },
+    {
+     "mes": 7,
+     "quantidade": 225.72
+    },
+    {
+     "mes": 8,
+     "quantidade": 121.11
+    },
+    {
+     "mes": 9,
+     "quantidade": 221.58
+    },
+    {
+     "mes": 10,
+     "quantidade": 145.89
+    }
+   ]
+  },
+  {
+   "codigo": "6578",
+   "nome": "KILO ZORRO FILHOTE",
+   "custo": 4.77,
+   "venda": 8.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 22.49
+    },
+    {
+     "mes": 2,
+     "quantidade": 43.47
+    },
+    {
+     "mes": 3,
+     "quantidade": 58.46
+    },
+    {
+     "mes": 4,
+     "quantidade": 65.96
+    },
+    {
+     "mes": 5,
+     "quantidade": 113
+    },
+    {
+     "mes": 6,
+     "quantidade": 51.87
+    },
+    {
+     "mes": 7,
+     "quantidade": 103.73
+    },
+    {
+     "mes": 8,
+     "quantidade": 97.45
+    },
+    {
+     "mes": 9,
+     "quantidade": 69.16
+    },
+    {
+     "mes": 10,
+     "quantidade": 66.01
+    }
+   ]
+  },
+  {
+   "codigo": "31588",
+   "nome": "KILO ZORRO ORIGINAL AD",
+   "custo": 3.96,
+   "venda": 6.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 15.12
+    },
+    {
+     "mes": 2,
+     "quantidade": 7.56
+    },
+    {
+     "mes": 3,
+     "quantidade": 1.89
+    },
+    {
+     "mes": 4,
+     "quantidade": 1.89
+    },
+    {
+     "mes": 9,
+     "quantidade": 1
+    }
+   ]
+  },
+  {
+   "codigo": "31989",
+   "nome": "KILO ZORRO PREMIUM (21% PRO)",
+   "custo": 4.49,
+   "venda": 7.5,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 43.99
+    },
+    {
+     "mes": 2,
+     "quantidade": 70.38
+    },
+    {
+     "mes": 3,
+     "quantidade": 52.78
+    },
+    {
+     "mes": 4,
+     "quantidade": 54.98
+    },
+    {
+     "mes": 5,
+     "quantidade": 89.17
+    },
+    {
+     "mes": 6,
+     "quantidade": 74.15
+    },
+    {
+     "mes": 7,
+     "quantidade": 60.67
+    },
+    {
+     "mes": 8,
+     "quantidade": 67.41
+    },
+    {
+     "mes": 9,
+     "quantidade": 65.16
+    },
+    {
+     "mes": 10,
+     "quantidade": 71.9
+    }
+   ]
+  },
+  {
+   "codigo": "55587",
+   "nome": "KILO ZORRO PREMIUM CHIPS (21% PRO)",
+   "custo": 4.77,
+   "venda": 8,
+   "ativo": true,
+   "vendas_2026": [
+    {
+     "mes": 1,
+     "quantidade": 29.47
+    },
+    {
+     "mes": 2,
+     "quantidade": 31.58
+    },
+    {
+     "mes": 3,
+     "quantidade": 27.37
+    },
+    {
+     "mes": 4,
+     "quantidade": 25.26
+    },
+    {
+     "mes": 5,
+     "quantidade": 38.82
+    },
+    {
+     "mes": 6,
+     "quantidade": 22.21
+    },
+    {
+     "mes": 7,
+     "quantidade": 53.31
+    },
+    {
+     "mes": 8,
+     "quantidade": 59.98
+    },
+    {
+     "mes": 9,
+     "quantidade": 59.97
+    },
+    {
+     "mes": 10,
+     "quantidade": 53.31
+    }
+   ]
+  }
+ ]
+}
