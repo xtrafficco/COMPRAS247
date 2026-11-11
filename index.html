@@ -44,7 +44,8 @@
   </section>
 
   <div class="app-shell locked" id="appShell">
-    <aside class="sidebar">
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <aside class="sidebar" id="appSidebar">
       <div class="brand">
         <div class="brand-mark">SC</div>
         <div>
@@ -144,6 +145,11 @@
     </aside>
 
     <main class="main">
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="appSidebar">
+        <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></span>
+        <span>Menu</span>
+      </button>
+
       <div class="topbar">
         <div class="page-title">
           <h1 id="pageTitle">Catalogo de produtos</h1>
@@ -202,7 +208,7 @@
             <div class="table-wrap"><table><thead><tr><th>Produto</th><th>Quantidade</th><th>Total</th></tr></thead><tbody id="dashboardTopProducts"></tbody></table></div>
           </div>
         </div>
-        <div class="panel admin-only-panel" id="approvalRulesPanel" style="margin-top: 16px;">
+        <div class="panel admin-only-panel" id="approvalRulesPanel">
           <div class="panel-header"><h2>Regras de aprovacao</h2></div>
           <div class="panel-body form-grid">
             <div class="field">
@@ -444,7 +450,7 @@
                   <textarea class="textarea" id="supplierNotesInput" placeholder="Dados bancarios, prazo, politica comercial..."></textarea>
                 </div>
               </div>
-              <div class="inline-actions" style="margin-top: 14px;">
+              <div class="inline-actions block-gap">
                 <button class="button" id="saveSupplierButton" type="button">Salvar fornecedor</button>
                 <button class="button secondary" id="clearSupplierButton" type="button">Limpar formulario</button>
               </div>
@@ -526,7 +532,7 @@
           </div>
         </div>
 
-        <div class="panel" style="margin-top: 16px;">
+        <div class="panel">
           <div class="panel-header"><h2>Registros de preco</h2></div>
           <div class="table-wrap">
             <table>
@@ -537,7 +543,7 @@
           <div class="empty" id="priceHistoryEmpty">Nenhum historico registrado para este produto.</div>
         </div>
 
-        <div class="panel admin-only-panel" id="priceAlertRulePanel" style="margin-top: 16px;">
+        <div class="panel admin-only-panel" id="priceAlertRulePanel">
           <div class="panel-header"><h2>Alerta de aumento</h2></div>
           <div class="panel-body form-grid">
             <div class="field">
@@ -653,7 +659,7 @@
                 </div>
               </div>
 
-              <div class="summary-grid" style="margin-top: 18px;">
+              <div class="summary-grid block-gap">
                 <div class="stat">
                   <span>Itens selecionados</span>
                   <strong id="orderItemsStat">0</strong>

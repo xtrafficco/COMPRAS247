@@ -1290,10 +1290,25 @@ const defaultProducts = [
       toastEl.hideTimer = window.setTimeout(() => toastEl.classList.remove("show"), 2200);
     }
 
+    function setNavOpen(open) {
+      const shell = document.getElementById("appShell");
+      const toggle = document.getElementById("navToggle");
+      if (!shell || !toggle) return;
+      shell.classList.toggle("nav-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      // Trava a rolagem do corpo enquanto a gaveta esta aberta.
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+
+    function isNavOpen() {
+      return document.getElementById("appShell")?.classList.contains("nav-open") === true;
+    }
+
     function setTab(tab) {
       if (!canAccessTab(tab)) {
         tab = firstAllowedTab();
       }
+      setNavOpen(false);
       activeTab = tab;
       document.querySelectorAll(".tab-button").forEach((button) => {
         button.classList.toggle("active", button.dataset.tab === tab);
@@ -1381,6 +1396,7 @@ const defaultProducts = [
       remoteUpdatedAt = "";
       currentUser = null;
       activeTab = "catalogo";
+      setNavOpen(false);
       closeOrderModal();
       renderAuth();
     }
@@ -3075,7 +3091,23 @@ const defaultProducts = [
       if (event.target.id === "orderModal") closeOrderModal();
     });
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") closeOrderModal();
+      if (event.key !== "Escape") return;
+      if (isNavOpen()) {
+        setNavOpen(false);
+        document.getElementById("navToggle").focus();
+        return;
+      }
+      closeOrderModal();
+    });
+
+    document.getElementById("navToggle").addEventListener("click", () => setNavOpen(!isNavOpen()));
+    document.getElementById("navBackdrop").addEventListener("click", () => setNavOpen(false));
+
+    // Ao voltar para a largura de desktop a sidebar e fixa: a gaveta precisa fechar
+    // para nao deixar a rolagem do corpo travada.
+    const navDesktopQuery = window.matchMedia("(min-width: 901px)");
+    navDesktopQuery.addEventListener("change", (event) => {
+      if (event.matches) setNavOpen(false);
     });
     document.getElementById("clearCatalogImportButton").addEventListener("click", () => {
       ["catalogCodesInput", "catalogNamesInput", "catalogPricesInput", "catalogSalePricesInput"].forEach((id) => {
